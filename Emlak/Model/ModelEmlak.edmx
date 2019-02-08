@@ -1,0 +1,912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EmlakModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CashBook">
+          <Key>
+            <PropertyRef Name="TransactionId" />
+          </Key>
+          <Property Name="TransactionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TransactionDate" Type="datetime" Nullable="false" />
+          <Property Name="TransactionType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Amount" Type="money" Nullable="false" />
+          <Property Name="Definition" Type="nvarchar" MaxLength="250" />
+          <Property Name="DebtId" Type="int" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="CityId" />
+          </Key>
+          <Property Name="CityId" Type="int" Nullable="false" />
+          <Property Name="CityName" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Contract">
+          <Key>
+            <PropertyRef Name="ContractId" />
+          </Key>
+          <Property Name="ContractId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartingDate" Type="date" Nullable="false" />
+          <Property Name="EndingDate" Type="date" Nullable="false" />
+          <Property Name="Tenancy" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Neighborhood" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Street" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Apartment" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Town" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RealtyType" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="RentMoneyInMonth" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RentMoneyTotal" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PaymentType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PaymentDay" Type="nvarchar" MaxLength="2" Nullable="false" />
+          <Property Name="CurrentSituationOfRealEstate" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="AimOfRent" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="InventoryList" Type="text" />
+          <Property Name="ContractSpecialConditions" Type="text" />
+          <Property Name="LandlordCitizenshipId" Type="nvarchar" MaxLength="11" />
+          <Property Name="LandlordFullName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LandlordPhone" Type="nvarchar" MaxLength="50" />
+          <Property Name="LandlordAddress" Type="nvarchar" MaxLength="500" />
+          <Property Name="LandlordBankAccountName" Type="nvarchar" MaxLength="100" />
+          <Property Name="LandlordBankAccountNumber" Type="nvarchar" MaxLength="100" />
+          <Property Name="LandlordIBAN" Type="nvarchar" MaxLength="100" />
+          <Property Name="Explanation" Type="nvarchar" MaxLength="500" />
+          <Property Name="FileNumber" Type="int" Nullable="false" />
+          <Property Name="RealtyDefinition" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ContractParties">
+          <Key>
+            <PropertyRef Name="ContractId" />
+            <PropertyRef Name="PersonId" />
+          </Key>
+          <Property Name="ContractId" Type="int" Nullable="false" />
+          <Property Name="PersonId" Type="int" Nullable="false" />
+          <Property Name="PersonType" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Debt">
+          <Key>
+            <PropertyRef Name="DebtId" />
+          </Key>
+          <Property Name="DebtId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Definition" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Amount" Type="money" Nullable="false" />
+          <Property Name="DueDate" Type="date" Nullable="false" />
+          <Property Name="PaymentDate" Type="nvarchar" MaxLength="50" />
+          <Property Name="PaymentType" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsPaidByTenant" Type="bit" Nullable="false" />
+          <Property Name="Explanation" Type="nvarchar" MaxLength="500" />
+          <Property Name="ContractId" Type="int" Nullable="false" />
+          <Property Name="IsPaidToLandlord" Type="bit" Nullable="false" />
+          <Property Name="IsCommission" Type="bit" Nullable="false" />
+          <Property Name="PaymentDateToLandlord" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="PersonId" />
+          </Key>
+          <Property Name="PersonId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CitizenshipId" Type="nvarchar" MaxLength="11" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Explanation" Type="nvarchar" MaxLength="500" />
+          <Property Name="Phone1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone2" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Realty">
+          <Key>
+            <PropertyRef Name="RealtyId" />
+          </Key>
+          <Property Name="RealtyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Definition" Type="nvarchar" MaxLength="500" />
+          <Property Name="RealtyTypeId" Type="int" />
+          <Property Name="Neighborhood" Type="nvarchar" MaxLength="100" />
+          <Property Name="Street" Type="nvarchar" MaxLength="100" />
+          <Property Name="Apartment" Type="nvarchar" MaxLength="100" />
+          <Property Name="Town" Type="nvarchar" MaxLength="100" />
+          <Property Name="City" Type="nvarchar" MaxLength="100" />
+          <Property Name="Explanation" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="RealtyType">
+          <Key>
+            <PropertyRef Name="RealtyTypeId" />
+          </Key>
+          <Property Name="RealtyTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RealtyTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Town">
+          <Key>
+            <PropertyRef Name="TownId" />
+          </Key>
+          <Property Name="TownId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TownName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CityId" Type="int" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_CashBook_Debt">
+          <End Role="Debt" Type="Self.Debt" Multiplicity="0..1" />
+          <End Role="CashBook" Type="Self.CashBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Debt">
+              <PropertyRef Name="DebtId" />
+            </Principal>
+            <Dependent Role="CashBook">
+              <PropertyRef Name="DebtId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ContractParties_Contract">
+          <End Role="Contract" Type="Self.Contract" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ContractParties" Type="Self.ContractParties" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contract">
+              <PropertyRef Name="ContractId" />
+            </Principal>
+            <Dependent Role="ContractParties">
+              <PropertyRef Name="ContractId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ContractParties_Person">
+          <End Role="Person" Type="Self.Person" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ContractParties" Type="Self.ContractParties" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="PersonId" />
+            </Principal>
+            <Dependent Role="ContractParties">
+              <PropertyRef Name="PersonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Debt_Contract">
+          <End Role="Contract" Type="Self.Contract" Multiplicity="1" />
+          <End Role="Debt" Type="Self.Debt" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contract">
+              <PropertyRef Name="ContractId" />
+            </Principal>
+            <Dependent Role="Debt">
+              <PropertyRef Name="ContractId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Realty_RealtyType">
+          <End Role="RealtyType" Type="Self.RealtyType" Multiplicity="0..1" />
+          <End Role="Realty" Type="Self.Realty" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RealtyType">
+              <PropertyRef Name="RealtyTypeId" />
+            </Principal>
+            <Dependent Role="Realty">
+              <PropertyRef Name="RealtyTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Town_City">
+          <End Role="City" Type="Self.City" Multiplicity="0..1" />
+          <End Role="Town" Type="Self.Town" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="CityId" />
+            </Principal>
+            <Dependent Role="Town">
+              <PropertyRef Name="CityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="sp_getContracts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_getDebtDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DebtId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_getDebtsToLandlord" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_getExpiredContracts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_getMonthlyRentalReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_getMonthlyReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Month" Type="int" Mode="In" />
+          <Parameter Name="Year" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_getYearlyReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Year" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="EmlakModelStoreContainer">
+          <EntitySet Name="CashBook" EntityType="Self.CashBook" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Contract" EntityType="Self.Contract" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ContractParties" EntityType="Self.ContractParties" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Debt" EntityType="Self.Debt" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Realty" EntityType="Self.Realty" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RealtyType" EntityType="Self.RealtyType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Town" EntityType="Self.Town" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_CashBook_Debt" Association="Self.FK_CashBook_Debt">
+            <End Role="Debt" EntitySet="Debt" />
+            <End Role="CashBook" EntitySet="CashBook" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ContractParties_Contract" Association="Self.FK_ContractParties_Contract">
+            <End Role="Contract" EntitySet="Contract" />
+            <End Role="ContractParties" EntitySet="ContractParties" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ContractParties_Person" Association="Self.FK_ContractParties_Person">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="ContractParties" EntitySet="ContractParties" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Debt_Contract" Association="Self.FK_Debt_Contract">
+            <End Role="Contract" EntitySet="Contract" />
+            <End Role="Debt" EntitySet="Debt" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Realty_RealtyType" Association="Self.FK_Realty_RealtyType">
+            <End Role="RealtyType" EntitySet="RealtyType" />
+            <End Role="Realty" EntitySet="Realty" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Town_City" Association="Self.FK_Town_City">
+            <End Role="City" EntitySet="City" />
+            <End Role="Town" EntitySet="Town" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EmlakModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CashBook">
+          <Key>
+            <PropertyRef Name="TransactionId" />
+          </Key>
+          <Property Name="TransactionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TransactionDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TransactionType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Amount" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="Definition" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="DebtId" Type="Int32" />
+          <NavigationProperty Name="Debt" Relationship="Self.FK_CashBook_Debt" FromRole="CashBook" ToRole="Debt" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="CityId" />
+          </Key>
+          <Property Name="CityId" Type="Int32" Nullable="false" />
+          <Property Name="CityName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Town" Relationship="Self.FK_Town_City" FromRole="City" ToRole="Town" />
+        </EntityType>
+        <EntityType Name="Contract">
+          <Key>
+            <PropertyRef Name="ContractId" />
+          </Key>
+          <Property Name="ContractId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartingDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="EndingDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Tenancy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Neighborhood" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Street" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Apartment" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Town" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RealtyType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RentMoneyInMonth" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RentMoneyTotal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PaymentType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PaymentDay" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CurrentSituationOfRealEstate" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AimOfRent" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="InventoryList" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ContractSpecialConditions" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LandlordCitizenshipId" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="LandlordFullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LandlordPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LandlordAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="LandlordBankAccountName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="LandlordBankAccountNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="LandlordIBAN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Explanation" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="FileNumber" Type="Int32" Nullable="false" />
+          <Property Name="RealtyDefinition" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ContractParties" Relationship="Self.FK_ContractParties_Contract" FromRole="Contract" ToRole="ContractParties" />
+          <NavigationProperty Name="Debt" Relationship="Self.FK_Debt_Contract" FromRole="Contract" ToRole="Debt" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ContractParties">
+          <Key>
+            <PropertyRef Name="ContractId" />
+            <PropertyRef Name="PersonId" />
+          </Key>
+          <Property Name="ContractId" Type="Int32" Nullable="false" />
+          <Property Name="PersonId" Type="Int32" Nullable="false" />
+          <Property Name="PersonType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Contract" Relationship="Self.FK_ContractParties_Contract" FromRole="ContractParties" ToRole="Contract" />
+          <NavigationProperty Name="Person" Relationship="Self.FK_ContractParties_Person" FromRole="ContractParties" ToRole="Person" />
+        </EntityType>
+        <EntityType Name="Debt">
+          <Key>
+            <PropertyRef Name="DebtId" />
+          </Key>
+          <Property Name="DebtId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Definition" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Amount" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="DueDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="PaymentDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PaymentDateToLandlord" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PaymentType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsPaidByTenant" Type="Boolean" Nullable="false" />
+          <Property Name="Explanation" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ContractId" Type="Int32" Nullable="false" />
+          <Property Name="IsPaidToLandlord" Type="Boolean" Nullable="false" />
+          <Property Name="IsCommission" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="CashBook" Relationship="Self.FK_CashBook_Debt" FromRole="Debt" ToRole="CashBook" />
+          <NavigationProperty Name="Contract" Relationship="Self.FK_Debt_Contract" FromRole="Debt" ToRole="Contract" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="PersonId" />
+          </Key>
+          <Property Name="PersonId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CitizenshipId" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Phone2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Explanation" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ContractParties" Relationship="Self.FK_ContractParties_Person" FromRole="Person" ToRole="ContractParties" />
+        </EntityType>
+        <EntityType Name="Realty">
+          <Key>
+            <PropertyRef Name="RealtyId" />
+          </Key>
+          <Property Name="RealtyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Definition" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="RealtyTypeId" Type="Int32" />
+          <Property Name="Neighborhood" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Street" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Apartment" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Town" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Explanation" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="RealtyType" Relationship="Self.FK_Realty_RealtyType" FromRole="Realty" ToRole="RealtyType" />
+        </EntityType>
+        <EntityType Name="RealtyType">
+          <Key>
+            <PropertyRef Name="RealtyTypeId" />
+          </Key>
+          <Property Name="RealtyTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RealtyTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Realty" Relationship="Self.FK_Realty_RealtyType" FromRole="RealtyType" ToRole="Realty" />
+        </EntityType>
+        <EntityType Name="Town">
+          <Key>
+            <PropertyRef Name="TownId" />
+          </Key>
+          <Property Name="TownId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TownName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CityId" Type="Int32" />
+          <NavigationProperty Name="City" Relationship="Self.FK_Town_City" FromRole="Town" ToRole="City" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_CashBook_Debt">
+          <End Role="Debt" Type="Self.Debt" Multiplicity="0..1" />
+          <End Role="CashBook" Type="Self.CashBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Debt">
+              <PropertyRef Name="DebtId" />
+            </Principal>
+            <Dependent Role="CashBook">
+              <PropertyRef Name="DebtId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Town_City">
+          <End Role="City" Type="Self.City" Multiplicity="0..1" />
+          <End Role="Town" Type="Self.Town" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="CityId" />
+            </Principal>
+            <Dependent Role="Town">
+              <PropertyRef Name="CityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ContractParties_Contract">
+          <End Role="Contract" Type="Self.Contract" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ContractParties" Type="Self.ContractParties" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contract">
+              <PropertyRef Name="ContractId" />
+            </Principal>
+            <Dependent Role="ContractParties">
+              <PropertyRef Name="ContractId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Debt_Contract">
+          <End Role="Contract" Type="Self.Contract" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Debt" Type="Self.Debt" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contract">
+              <PropertyRef Name="ContractId" />
+            </Principal>
+            <Dependent Role="Debt">
+              <PropertyRef Name="ContractId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ContractParties_Person">
+          <End Role="Person" Type="Self.Person" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ContractParties" Type="Self.ContractParties" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="PersonId" />
+            </Principal>
+            <Dependent Role="ContractParties">
+              <PropertyRef Name="PersonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Realty_RealtyType">
+          <End Role="RealtyType" Type="Self.RealtyType" Multiplicity="0..1" />
+          <End Role="Realty" Type="Self.Realty" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RealtyType">
+              <PropertyRef Name="RealtyTypeId" />
+            </Principal>
+            <Dependent Role="Realty">
+              <PropertyRef Name="RealtyTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="EmlakEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CashBook" EntityType="Self.CashBook" />
+          <EntitySet Name="City" EntityType="Self.City" />
+          <EntitySet Name="Contract" EntityType="Self.Contract" />
+          <EntitySet Name="ContractParties" EntityType="Self.ContractParties" />
+          <EntitySet Name="Debt" EntityType="Self.Debt" />
+          <EntitySet Name="Person" EntityType="Self.Person" />
+          <EntitySet Name="Realty" EntityType="Self.Realty" />
+          <EntitySet Name="RealtyType" EntityType="Self.RealtyType" />
+          <EntitySet Name="Town" EntityType="Self.Town" />
+          <EntitySet Name="User" EntityType="Self.User" />
+          <AssociationSet Name="FK_CashBook_Debt" Association="Self.FK_CashBook_Debt">
+            <End Role="Debt" EntitySet="Debt" />
+            <End Role="CashBook" EntitySet="CashBook" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Town_City" Association="Self.FK_Town_City">
+            <End Role="City" EntitySet="City" />
+            <End Role="Town" EntitySet="Town" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ContractParties_Contract" Association="Self.FK_ContractParties_Contract">
+            <End Role="Contract" EntitySet="Contract" />
+            <End Role="ContractParties" EntitySet="ContractParties" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Debt_Contract" Association="Self.FK_Debt_Contract">
+            <End Role="Contract" EntitySet="Contract" />
+            <End Role="Debt" EntitySet="Debt" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ContractParties_Person" Association="Self.FK_ContractParties_Person">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="ContractParties" EntitySet="ContractParties" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Realty_RealtyType" Association="Self.FK_Realty_RealtyType">
+            <End Role="RealtyType" EntitySet="RealtyType" />
+            <End Role="Realty" EntitySet="Realty" />
+          </AssociationSet>
+          <FunctionImport Name="sp_getContracts" ReturnType="Collection(EmlakModel.sp_getContracts_Result)" />
+          <FunctionImport Name="sp_getDebtDetails" ReturnType="Collection(EmlakModel.sp_getDebtDetails_Result)">
+          <Parameter Name="DebtId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_getExpiredContracts" ReturnType="Collection(EmlakModel.sp_getExpiredContracts_Result)" />
+          <FunctionImport Name="sp_getMonthlyRentalReport" ReturnType="Collection(EmlakModel.sp_getMonthlyRentalReport_Result)" />
+          <FunctionImport Name="sp_getMonthlyReport" ReturnType="Collection(EmlakModel.sp_getMonthlyReport_Result)">
+            <Parameter Name="Month" Mode="In" Type="Int32" />
+            <Parameter Name="Year" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_getYearlyReport" ReturnType="Collection(EmlakModel.sp_getYearlyReport_Result)">
+          <Parameter Name="Year" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_getDebtsToLandlord" ReturnType="Collection(EmlakModel.sp_getDebtsToLandlord_Result)" />
+        </EntityContainer>
+        <ComplexType Name="sp_getContracts_Result">
+          <Property Type="Int32" Name="ContractId" Nullable="false" />
+          <Property Type="Int32" Name="FileNumber" Nullable="false" />
+          <Property Type="String" Name="Kiracilar" Nullable="true" />
+          <Property Type="String" Name="LandlordFullName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="LandlordPhone" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="RealtyDefinition" Nullable="false" MaxLength="250" />
+          <Property Type="DateTime" Name="StartingDate" Nullable="false" />
+          <Property Type="DateTime" Name="EndingDate" Nullable="false" />
+          <Property Type="String" Name="RentMoneyInMonth" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Tenancy" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Explanation" Nullable="true" MaxLength="500" />
+        </ComplexType>
+        <ComplexType Name="sp_getDebtDetails_Result">
+          <Property Type="Int32" Name="DebtId" Nullable="false" />
+          <Property Type="String" Name="Definition" Nullable="false" MaxLength="100" />
+          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" />
+          <Property Type="DateTime" Name="DueDate" Nullable="false" />
+          <Property Type="String" Name="PaymentDate" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="PaymentDateToLandlord" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="PaymentType" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Explanation" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="LandlordFullName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="LandlordPhone" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="RealtyDefinition" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Kiracilar" Nullable="true" />
+          <Property Type="Boolean" Name="IsPaidByTenant" Nullable="false" />
+          <Property Type="Boolean" Name="IsPaidToLandlord" Nullable="false" />
+          <Property Type="Boolean" Name="IsCommission" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="sp_getExpiredContracts_Result">
+          <Property Type="Int32" Name="ContractId" Nullable="false" />
+          <Property Type="Int32" Name="FileNumber" Nullable="false" />
+          <Property Type="String" Name="Kiracilar" Nullable="true" />
+          <Property Type="String" Name="LandlordFullName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="LandlordPhone" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="RealtyDefinition" Nullable="false" MaxLength="250" />
+          <Property Type="DateTime" Name="StartingDate" Nullable="false" />
+          <Property Type="DateTime" Name="EndingDate" Nullable="false" />
+          <Property Type="String" Name="RentMoneyInMonth" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Tenancy" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Explanation" Nullable="true" MaxLength="500" />
+        </ComplexType>
+        <ComplexType Name="sp_getMonthlyRentalReport_Result">
+          <Property Type="Int32" Name="DebtId" Nullable="false" />
+          <Property Type="Int32" Name="FileNumber" Nullable="false" />
+          <Property Type="Boolean" Name="IsCommission" Nullable="false" />
+          <Property Type="DateTime" Name="DueDate" Nullable="false" />
+          <Property Type="String" Name="Kiracilar" Nullable="true" />
+          <Property Type="String" Name="RealtyDefinition" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Definition" Nullable="false" MaxLength="100" />
+          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" />
+          <Property Type="String" Name="Explanation" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="EndingDate" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="sp_getMonthlyReport_Result">
+          <Property Type="Int32" Name="DebtId" Nullable="false" />
+          <Property Type="Int32" Name="FileNumber" Nullable="false" />
+          <Property Type="Boolean" Name="IsPaidByTenant" Nullable="false" />
+          <Property Type="DateTime" Name="DueDate" Nullable="false" />
+          <Property Type="String" Name="PaymentDate" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Kiracilar" Nullable="true" />
+          <Property Type="String" Name="RealtyDefinition" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Definition" Nullable="false" MaxLength="100" />
+          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" />
+          <Property Type="String" Name="Explanation" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="EndingDate" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="sp_getYearlyReport_Result">
+          <Property Type="Int32" Name="DebtId" Nullable="false" />
+          <Property Type="Int32" Name="FileNumber" Nullable="false" />
+          <Property Type="Boolean" Name="IsPaidByTenant" Nullable="false" />
+          <Property Type="DateTime" Name="DueDate" Nullable="false" />
+          <Property Type="String" Name="PaymentDate" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Kiracilar" Nullable="true" />
+          <Property Type="String" Name="RealtyDefinition" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Definition" Nullable="false" MaxLength="100" />
+          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" />
+          <Property Type="String" Name="Explanation" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="EndingDate" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="sp_getDebtsToLandlord_Result">
+          <Property Type="Int32" Name="DebtId" Nullable="false" />
+          <Property Type="Int32" Name="FileNumber" Nullable="false" />
+          <Property Type="Boolean" Name="IsPaidToLandlord" Nullable="false" />
+          <Property Type="DateTime" Name="DueDate" Nullable="false" />
+          <Property Type="String" Name="PaymentDate" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Kiracilar" Nullable="true" />
+          <Property Type="String" Name="LandlordFullName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="RealtyDefinition" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Definition" Nullable="false" MaxLength="100" />
+          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" />
+          <Property Type="String" Name="Explanation" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="EndingDate" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EmlakModelStoreContainer" CdmEntityContainer="EmlakEntities">
+          <EntitySetMapping Name="CashBook">
+            <EntityTypeMapping TypeName="EmlakModel.CashBook">
+              <MappingFragment StoreEntitySet="CashBook">
+                <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+                <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+                <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Definition" ColumnName="Definition" />
+                <ScalarProperty Name="DebtId" ColumnName="DebtId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="City">
+            <EntityTypeMapping TypeName="EmlakModel.City">
+              <MappingFragment StoreEntitySet="City">
+                <ScalarProperty Name="CityId" ColumnName="CityId" />
+                <ScalarProperty Name="CityName" ColumnName="CityName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Contract">
+            <EntityTypeMapping TypeName="EmlakModel.Contract">
+              <MappingFragment StoreEntitySet="Contract">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+                <ScalarProperty Name="StartingDate" ColumnName="StartingDate" />
+                <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+                <ScalarProperty Name="Tenancy" ColumnName="Tenancy" />
+                <ScalarProperty Name="Neighborhood" ColumnName="Neighborhood" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="Apartment" ColumnName="Apartment" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Town" ColumnName="Town" />
+                <ScalarProperty Name="RealtyType" ColumnName="RealtyType" />
+                <ScalarProperty Name="RentMoneyInMonth" ColumnName="RentMoneyInMonth" />
+                <ScalarProperty Name="RentMoneyTotal" ColumnName="RentMoneyTotal" />
+                <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+                <ScalarProperty Name="PaymentDay" ColumnName="PaymentDay" />
+                <ScalarProperty Name="CurrentSituationOfRealEstate" ColumnName="CurrentSituationOfRealEstate" />
+                <ScalarProperty Name="AimOfRent" ColumnName="AimOfRent" />
+                <ScalarProperty Name="InventoryList" ColumnName="InventoryList" />
+                <ScalarProperty Name="ContractSpecialConditions" ColumnName="ContractSpecialConditions" />
+                <ScalarProperty Name="LandlordCitizenshipId" ColumnName="LandlordCitizenshipId" />
+                <ScalarProperty Name="LandlordFullName" ColumnName="LandlordFullName" />
+                <ScalarProperty Name="LandlordPhone" ColumnName="LandlordPhone" />
+                <ScalarProperty Name="LandlordAddress" ColumnName="LandlordAddress" />
+                <ScalarProperty Name="LandlordBankAccountName" ColumnName="LandlordBankAccountName" />
+                <ScalarProperty Name="LandlordBankAccountNumber" ColumnName="LandlordBankAccountNumber" />
+                <ScalarProperty Name="LandlordIBAN" ColumnName="LandlordIBAN" />
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+                <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
+                <ScalarProperty Name="RealtyDefinition" ColumnName="RealtyDefinition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ContractParties">
+            <EntityTypeMapping TypeName="EmlakModel.ContractParties">
+              <MappingFragment StoreEntitySet="ContractParties">
+                <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+                <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+                <ScalarProperty Name="PersonType" ColumnName="PersonType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Debt">
+            <EntityTypeMapping TypeName="EmlakModel.Debt">
+              <MappingFragment StoreEntitySet="Debt">
+                <ScalarProperty Name="DebtId" ColumnName="DebtId" />
+                <ScalarProperty Name="Definition" ColumnName="Definition" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+                <ScalarProperty Name="PaymentDateToLandlord" ColumnName="PaymentDateToLandlord" />
+                <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+                <ScalarProperty Name="IsPaidByTenant" ColumnName="IsPaidByTenant" />
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+                <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+                <ScalarProperty Name="IsPaidToLandlord" ColumnName="IsPaidToLandlord" />
+                <ScalarProperty Name="IsCommission" ColumnName="IsCommission" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Person">
+            <EntityTypeMapping TypeName="EmlakModel.Person">
+              <MappingFragment StoreEntitySet="Person">
+                <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+                <ScalarProperty Name="CitizenshipId" ColumnName="CitizenshipId" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Phone1" ColumnName="Phone1" />
+                <ScalarProperty Name="Phone2" ColumnName="Phone2" />
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Realty">
+            <EntityTypeMapping TypeName="EmlakModel.Realty">
+              <MappingFragment StoreEntitySet="Realty">
+                <ScalarProperty Name="RealtyId" ColumnName="RealtyId" />
+                <ScalarProperty Name="Definition" ColumnName="Definition" />
+                <ScalarProperty Name="RealtyTypeId" ColumnName="RealtyTypeId" />
+                <ScalarProperty Name="Neighborhood" ColumnName="Neighborhood" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="Apartment" ColumnName="Apartment" />
+                <ScalarProperty Name="Town" ColumnName="Town" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RealtyType">
+            <EntityTypeMapping TypeName="EmlakModel.RealtyType">
+              <MappingFragment StoreEntitySet="RealtyType">
+                <ScalarProperty Name="RealtyTypeId" ColumnName="RealtyTypeId" />
+                <ScalarProperty Name="RealtyTypeName" ColumnName="RealtyTypeName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Town">
+            <EntityTypeMapping TypeName="EmlakModel.Town">
+              <MappingFragment StoreEntitySet="Town">
+                <ScalarProperty Name="TownId" ColumnName="TownId" />
+                <ScalarProperty Name="TownName" ColumnName="TownName" />
+                <ScalarProperty Name="CityId" ColumnName="CityId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User">
+            <EntityTypeMapping TypeName="EmlakModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_getContracts" FunctionName="EmlakModel.Store.sp_getContracts">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EmlakModel.sp_getContracts_Result">
+                <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+                <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
+                <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
+                <ScalarProperty Name="LandlordFullName" ColumnName="LandlordFullName" />
+                <ScalarProperty Name="LandlordPhone" ColumnName="LandlordPhone" />
+                <ScalarProperty Name="RealtyDefinition" ColumnName="RealtyDefinition" />
+                <ScalarProperty Name="StartingDate" ColumnName="StartingDate" />
+                <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+                <ScalarProperty Name="RentMoneyInMonth" ColumnName="RentMoneyInMonth" />
+                <ScalarProperty Name="Tenancy" ColumnName="Tenancy" />
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_getDebtDetails" FunctionName="EmlakModel.Store.sp_getDebtDetails">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EmlakModel.sp_getDebtDetails_Result">
+                <ScalarProperty Name="DebtId" ColumnName="DebtId" />
+                <ScalarProperty Name="Definition" ColumnName="Definition" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+                <ScalarProperty Name="PaymentDateToLandlord" ColumnName="PaymentDateToLandlord" />
+                <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+                <ScalarProperty Name="LandlordFullName" ColumnName="LandlordFullName" />
+                <ScalarProperty Name="LandlordPhone" ColumnName="LandlordPhone" />
+                <ScalarProperty Name="RealtyDefinition" ColumnName="RealtyDefinition" />
+                <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
+                <ScalarProperty Name="IsPaidByTenant" ColumnName="IsPaidByTenant" />
+                <ScalarProperty Name="IsPaidToLandlord" ColumnName="IsPaidToLandlord" />
+                <ScalarProperty Name="IsCommission" ColumnName="IsCommission" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_getExpiredContracts" FunctionName="EmlakModel.Store.sp_getExpiredContracts">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EmlakModel.sp_getExpiredContracts_Result">
+                <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+                <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
+                <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
+                <ScalarProperty Name="LandlordFullName" ColumnName="LandlordFullName" />
+                <ScalarProperty Name="LandlordPhone" ColumnName="LandlordPhone" />
+                <ScalarProperty Name="RealtyDefinition" ColumnName="RealtyDefinition" />
+                <ScalarProperty Name="StartingDate" ColumnName="StartingDate" />
+                <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+                <ScalarProperty Name="RentMoneyInMonth" ColumnName="RentMoneyInMonth" />
+                <ScalarProperty Name="Tenancy" ColumnName="Tenancy" />
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_getMonthlyRentalReport" FunctionName="EmlakModel.Store.sp_getMonthlyRentalReport">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EmlakModel.sp_getMonthlyRentalReport_Result">
+                <ScalarProperty Name="DebtId" ColumnName="DebtId" />
+                <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
+                <ScalarProperty Name="IsCommission" ColumnName="IsCommission" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
+                <ScalarProperty Name="RealtyDefinition" ColumnName="RealtyDefinition" />
+                <ScalarProperty Name="Definition" ColumnName="Definition" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+                <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_getMonthlyReport" FunctionName="EmlakModel.Store.sp_getMonthlyReport">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EmlakModel.sp_getMonthlyReport_Result">
+                <ScalarProperty Name="DebtId" ColumnName="DebtId" />
+                <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
+                <ScalarProperty Name="IsPaidByTenant" ColumnName="IsPaidByTenant" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+                <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
+                <ScalarProperty Name="RealtyDefinition" ColumnName="RealtyDefinition" />
+                <ScalarProperty Name="Definition" ColumnName="Definition" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+                <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_getYearlyReport" FunctionName="EmlakModel.Store.sp_getYearlyReport">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EmlakModel.sp_getYearlyReport_Result">
+                <ScalarProperty Name="DebtId" ColumnName="DebtId" />
+                <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
+                <ScalarProperty Name="IsPaidByTenant" ColumnName="IsPaidByTenant" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+                <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
+                <ScalarProperty Name="RealtyDefinition" ColumnName="RealtyDefinition" />
+                <ScalarProperty Name="Definition" ColumnName="Definition" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+                <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_getDebtsToLandlord" FunctionName="EmlakModel.Store.sp_getDebtsToLandlord">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EmlakModel.sp_getDebtsToLandlord_Result">
+                <ScalarProperty Name="DebtId" ColumnName="DebtId" />
+                <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
+                <ScalarProperty Name="IsPaidToLandlord" ColumnName="IsPaidToLandlord" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+                <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
+                <ScalarProperty Name="LandlordFullName" ColumnName="LandlordFullName" />
+                <ScalarProperty Name="RealtyDefinition" ColumnName="RealtyDefinition" />
+                <ScalarProperty Name="Definition" ColumnName="Definition" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+                <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

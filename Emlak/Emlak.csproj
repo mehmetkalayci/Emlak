@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72E7A60D-E51B-4D27-9D70-75AEB017E1F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Emlak</RootNamespace>
+    <AssemblyName>Emlak</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\Hatice\Desktop\EmlakSetup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>tr</TargetCulture>
+    <ProductName>Kira Takip</ProductName>
+    <PublisherName>Kira Takip</PublisherName>
+    <SuiteName>Kira Takip</SuiteName>
+    <MinimumRequiredVersion>1.0.0.4</MinimumRequiredVersion>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F812F678C52DE801FD5040773F21830C6A23D1E7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Emlak_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>placeholder_Q3L_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Custom</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.8.1.2\lib\net45\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.ComponentModel.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Primitives.4.3.0\lib\net45\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helper\DateHelper.cs" />
+    <Compile Include="Helper\ExcelHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\FormHelper.cs" />
+    <Compile Include="Helper\LogHelper.cs" />
+    <Compile Include="Helper\MessageHelper.cs" />
+    <Compile Include="Helper\ExtensionMethods.cs" />
+    <Compile Include="Helper\StringHelper.cs" />
+    <Compile Include="Model\CashBook.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\City.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Contract.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ContractParties.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Debt.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ModelEmlak.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelEmlak.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ModelEmlak.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ModelEmlak.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelEmlak.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Person.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Realty.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RealtyType.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_getContracts_Result.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_getDebtDetails_Result.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_getDebtsToLandlord_Result.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_getExpiredContracts_Result.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_getMonthlyRentalReport_Result.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_getMonthlyReport_Result.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_getYearlyReport_Result.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Town.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\User.cs">
+      <DependentUpon>ModelEmlak.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="UI\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CashBook\FrmCashBookAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CashBook\FrmCashBookAdd.Designer.cs">
+      <DependentUpon>FrmCashBookAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CashBook\FrmCashBookList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CashBook\FrmCashBookList.Designer.cs">
+      <DependentUpon>FrmCashBookList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Contract\FrmContractAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Contract\FrmContractAdd.Designer.cs">
+      <DependentUpon>FrmContractAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Contract\FrmContractEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Contract\FrmContractEdit.Designer.cs">
+      <DependentUpon>FrmContractEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Contract\FrmContractExpired.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Contract\FrmContractExpired.Designer.cs">
+      <DependentUpon>FrmContractExpired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Contract\FrmContractList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Contract\FrmContractList.Designer.cs">
+      <DependentUpon>FrmContractList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Contract\FrmContractPartyAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Contract\FrmContractPartyAdd.Designer.cs">
+      <DependentUpon>FrmContractPartyAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Contract\FrmContractWriter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Contract\FrmContractWriter.Designer.cs">
+      <DependentUpon>FrmContractWriter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Contract\FrmDebtAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Contract\FrmDebtAdd.Designer.cs">
+      <DependentUpon>FrmDebtAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Invoice\FrmInvoicePrepare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Invoice\FrmInvoicePrepare.Designer.cs">
+      <DependentUpon>FrmInvoicePrepare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Invoice\FrmInvoiceShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Invoice\FrmInvoiceShow.Designer.cs">
+      <DependentUpon>FrmInvoiceShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Person\FrmPersonAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Person\FrmPersonAdd.Designer.cs">
+      <DependentUpon>FrmPersonAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Person\FrmPersonDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Person\FrmPersonDetail.Designer.cs">
+      <DependentUpon>FrmPersonDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Person\FrmPersonList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Person\FrmPersonList.Designer.cs">
+      <DependentUpon>FrmPersonList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Realty\FrmRealtyAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Realty\FrmRealtyAdd.Designer.cs">
+      <DependentUpon>FrmRealtyAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Realty\FrmRealtyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Realty\FrmRealtyList.Designer.cs">
+      <DependentUpon>FrmRealtyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Rental\FrmRentalAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Rental\FrmRentalAdd.Designer.cs">
+      <DependentUpon>FrmRentalAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Settings\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Settings\FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Settings\FrmBackupRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Settings\FrmBackupRestore.Designer.cs">
+      <DependentUpon>FrmBackupRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Settings\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Settings\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Settings\FrmLoginSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Settings\FrmLoginSetting.Designer.cs">
+      <DependentUpon>FrmLoginSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Settings\FrmReportSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Settings\FrmReportSettings.Designer.cs">
+      <DependentUpon>FrmReportSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Upcoming\FrmDebtsToLandlord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Upcoming\FrmDebtsToLandlord.Designer.cs">
+      <DependentUpon>FrmDebtsToLandlord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Upcoming\FrmMonthlyReportList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Upcoming\FrmMonthlyReportList.Designer.cs">
+      <DependentUpon>FrmMonthlyReportList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Upcoming\FrmUpcomingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Upcoming\FrmUpcomingList.Designer.cs">
+      <DependentUpon>FrmUpcomingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Upcoming\FrmYearlyReportList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Upcoming\FrmYearlyReportList.Designer.cs">
+      <DependentUpon>FrmYearlyReportList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validations\ContractValidator.cs" />
+    <EmbeddedResource Include="Helper\ExcelHelper.resx">
+      <DependentUpon>ExcelHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CashBook\FrmCashBookAdd.resx">
+      <DependentUpon>FrmCashBookAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CashBook\FrmCashBookList.resx">
+      <DependentUpon>FrmCashBookList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Contract\FrmContractAdd.resx">
+      <DependentUpon>FrmContractAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Contract\FrmContractEdit.resx">
+      <DependentUpon>FrmContractEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Contract\FrmContractExpired.resx">
+      <DependentUpon>FrmContractExpired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Contract\FrmContractList.resx">
+      <DependentUpon>FrmContractList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Contract\FrmContractPartyAdd.resx">
+      <DependentUpon>FrmContractPartyAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Contract\FrmContractWriter.resx">
+      <DependentUpon>FrmContractWriter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Contract\FrmDebtAdd.resx">
+      <DependentUpon>FrmDebtAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Invoice\FrmInvoicePrepare.resx">
+      <DependentUpon>FrmInvoicePrepare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Invoice\FrmInvoiceShow.resx">
+      <DependentUpon>FrmInvoiceShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Person\FrmPersonAdd.resx">
+      <DependentUpon>FrmPersonAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Person\FrmPersonDetail.resx">
+      <DependentUpon>FrmPersonDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Person\FrmPersonList.resx">
+      <DependentUpon>FrmPersonList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Realty\FrmRealtyAdd.resx">
+      <DependentUpon>FrmRealtyAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Realty\FrmRealtyList.resx">
+      <DependentUpon>FrmRealtyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Rental\FrmRentalAdd.resx">
+      <DependentUpon>FrmRentalAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Settings\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Settings\FrmBackupRestore.resx">
+      <DependentUpon>FrmBackupRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Settings\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Settings\FrmLoginSetting.resx">
+      <DependentUpon>FrmLoginSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Settings\FrmReportSettings.resx">
+      <DependentUpon>FrmReportSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Upcoming\FrmDebtsToLandlord.resx">
+      <DependentUpon>FrmDebtsToLandlord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Upcoming\FrmMonthlyReportList.resx">
+      <DependentUpon>FrmMonthlyReportList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Upcoming\FrmUpcomingList.resx">
+      <DependentUpon>FrmUpcomingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Upcoming\FrmYearlyReportList.resx">
+      <DependentUpon>FrmYearlyReportList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Model\ModelEmlak.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelEmlak.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\ModelEmlak.edmx.diagram">
+      <DependentUpon>ModelEmlak.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Report\ReportInvoice.rdlc" />
+    <None Include="Resources\contract.doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Validations\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.12.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2014 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\ModelEmlak.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelEmlak.edmx</DependentUpon>
+      <LastGenOutput>ModelEmlak.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\ModelEmlak.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelEmlak.edmx</DependentUpon>
+      <LastGenOutput>ModelEmlak.cs</LastGenOutput>
+    </Content>
+    <Content Include="placeholder_Q3L_icon.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\arsevlogo.jpg" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\inceemlak.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

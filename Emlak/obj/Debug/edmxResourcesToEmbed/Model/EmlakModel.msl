@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmlakModelStoreContainer" CdmEntityContainer="EmlakEntities">
+    <EntitySetMapping Name="CashBook">
+      <EntityTypeMapping TypeName="EmlakModel.CashBook">
+        <MappingFragment StoreEntitySet="CashBook">
+          <ScalarProperty Name="DebtId" ColumnName="DebtId" />
+          <ScalarProperty Name="Definition" ColumnName="Definition" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="City">
+      <EntityTypeMapping TypeName="EmlakModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contract">
+      <EntityTypeMapping TypeName="EmlakModel.Contract">
+        <MappingFragment StoreEntitySet="Contract">
+          <ScalarProperty Name="LandlordAddress" ColumnName="LandlordAddress" />
+          <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+          <ScalarProperty Name="LandlordIBAN" ColumnName="LandlordIBAN" />
+          <ScalarProperty Name="LandlordBankAccountNumber" ColumnName="LandlordBankAccountNumber" />
+          <ScalarProperty Name="LandlordBankAccountName" ColumnName="LandlordBankAccountName" />
+          <ScalarProperty Name="LandlordPhone" ColumnName="LandlordPhone" />
+          <ScalarProperty Name="LandlordFullName" ColumnName="LandlordFullName" />
+          <ScalarProperty Name="LandlordCitizenshipId" ColumnName="LandlordCitizenshipId" />
+          <ScalarProperty Name="ContractSpecialConditions" ColumnName="ContractSpecialConditions" />
+          <ScalarProperty Name="InventoryList" ColumnName="InventoryList" />
+          <ScalarProperty Name="AimOfRent" ColumnName="AimOfRent" />
+          <ScalarProperty Name="CurrentSituationOfRealEstate" ColumnName="CurrentSituationOfRealEstate" />
+          <ScalarProperty Name="PaymentDay" ColumnName="PaymentDay" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="RentMoneyTotal" ColumnName="RentMoneyTotal" />
+          <ScalarProperty Name="RentMoneyInMonth" ColumnName="RentMoneyInMonth" />
+          <ScalarProperty Name="RealtyType" ColumnName="RealtyType" />
+          <ScalarProperty Name="Town" ColumnName="Town" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Apartment" ColumnName="Apartment" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Neighborhood" ColumnName="Neighborhood" />
+          <ScalarProperty Name="Tenancy" ColumnName="Tenancy" />
+          <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+          <ScalarProperty Name="StartingDate" ColumnName="StartingDate" />
+          <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractParties">
+      <EntityTypeMapping TypeName="EmlakModel.ContractParties">
+        <MappingFragment StoreEntitySet="ContractParties">
+          <ScalarProperty Name="PersonType" ColumnName="PersonType" />
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+          <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Debt">
+      <EntityTypeMapping TypeName="EmlakModel.Debt">
+        <MappingFragment StoreEntitySet="Debt">
+          <ScalarProperty Name="IsCommission" ColumnName="IsCommission" />
+          <ScalarProperty Name="IsPaidToLandlord" ColumnName="IsPaidToLandlord" />
+          <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+          <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+          <ScalarProperty Name="IsPaidByTenant" ColumnName="IsPaidByTenant" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Definition" ColumnName="Definition" />
+          <ScalarProperty Name="DebtId" ColumnName="DebtId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Person">
+      <EntityTypeMapping TypeName="EmlakModel.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
+          <ScalarProperty Name="Phone2" ColumnName="Phone2" />
+          <ScalarProperty Name="Phone1" ColumnName="Phone1" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="CitizenshipId" ColumnName="CitizenshipId" />
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Realty">
+      <EntityTypeMapping TypeName="EmlakModel.Realty">
+        <MappingFragment StoreEntitySet="Realty">
+          <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Town" ColumnName="Town" />
+          <ScalarProperty Name="Apartment" ColumnName="Apartment" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Neighborhood" ColumnName="Neighborhood" />
+          <ScalarProperty Name="RealtyTypeId" ColumnName="RealtyTypeId" />
+          <ScalarProperty Name="Definition" ColumnName="Definition" />
+          <ScalarProperty Name="RealtyId" ColumnName="RealtyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RealtyType">
+      <EntityTypeMapping TypeName="EmlakModel.RealtyType">
+        <MappingFragment StoreEntitySet="RealtyType">
+          <ScalarProperty Name="RealtyTypeName" ColumnName="RealtyTypeName" />
+          <ScalarProperty Name="RealtyTypeId" ColumnName="RealtyTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Town">
+      <EntityTypeMapping TypeName="EmlakModel.Town">
+        <MappingFragment StoreEntitySet="Town">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="TownName" ColumnName="TownName" />
+          <ScalarProperty Name="TownId" ColumnName="TownId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_getContracts" FunctionName="EmlakModel.Store.sp_getContracts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EmlakModel.sp_getContracts_Result">
+          <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+          <ScalarProperty Name="StartingDate" ColumnName="StartingDate" />
+          <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+          <ScalarProperty Name="Tenancy" ColumnName="Tenancy" />
+          <ScalarProperty Name="RentMoneyInMonth" ColumnName="RentMoneyInMonth" />
+          <ScalarProperty Name="LandlordFullName" ColumnName="LandlordFullName" />
+          <ScalarProperty Name="LandlordPhone" ColumnName="LandlordPhone" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_getMonthlyRentalReport" FunctionName="EmlakModel.Store.sp_getMonthlyRentalReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EmlakModel.sp_getMonthlyRentalReport_Result">
+          <ScalarProperty Name="DebtId" ColumnName="DebtId" />
+          <ScalarProperty Name="IsPaidByTenant" ColumnName="IsPaidByTenant" />
+          <ScalarProperty Name="IsCommission" ColumnName="IsCommission" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Definition" ColumnName="Definition" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+          <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_getMonthlyReport" FunctionName="EmlakModel.Store.sp_getMonthlyReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EmlakModel.sp_getMonthlyReport_Result">
+          <ScalarProperty Name="DebtId" ColumnName="DebtId" />
+          <ScalarProperty Name="IsPaidByTenant" ColumnName="IsPaidByTenant" />
+          <ScalarProperty Name="IsCommission" ColumnName="IsCommission" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Definition" ColumnName="Definition" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+          <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_getYearlyReport" FunctionName="EmlakModel.Store.sp_getYearlyReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EmlakModel.sp_getYearlyReport_Result">
+          <ScalarProperty Name="DebtId" ColumnName="DebtId" />
+          <ScalarProperty Name="IsPaidByTenant" ColumnName="IsPaidByTenant" />
+          <ScalarProperty Name="IsCommission" ColumnName="IsCommission" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Definition" ColumnName="Definition" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+          <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

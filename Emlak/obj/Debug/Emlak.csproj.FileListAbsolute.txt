@@ -1,0 +1,540 @@
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Emlak.mdf
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Emlak_log.ldf
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Emlak.exe.config
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Emlak.exe
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Emlak.pdb
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\EntityFramework.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\FluentValidation.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\System.ComponentModel.Primitives.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\System.ValueTuple.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\EnvDTE.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.SqlServer.Dmf.Common.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.SqlServer.Diagnostics.STrace.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.SqlServer.RegSvrEnum.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\stdole.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\EnvDTE80.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\VSLangProj.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\VSLangProj80.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.SqlServer.SqlTDiagM.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\VSLangProj2.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\EntityFramework.xml
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\FluentValidation.xml
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\System.ValueTuple.xml
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.csprojAssemblyReference.cache
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.Helper.ExcelHelper.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.Properties.Resources.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.BaseForm.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.CashBook.FrmCashBookAdd.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.CashBook.FrmCashBookList.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractAdd.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractEdit.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractList.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractPartyAdd.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractWriter.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Contract.FrmDebtAdd.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.FrmMain.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Invoice.FrmInvoicePrepare.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Invoice.FrmInvoiceShow.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Person.FrmPersonAdd.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Person.FrmPersonDetail.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Person.FrmPersonList.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Realty.FrmRealtyAdd.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Realty.FrmRealtyList.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Rental.FrmRentalAdd.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Settings.FrmAbout.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Settings.FrmLogin.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Settings.FrmLoginSetting.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmMonthlyReportList.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmUpcomingList.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmYearlyReportList.resources
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.csproj.GenerateResource.cache
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.csproj.CoreCompileInputs.cache
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.csproj.CopyComplete
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.exe
+C:\Users\Hatice\Desktop\Emlak - Copy\Emlak\obj\Debug\Emlak.pdb
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Emlak.exe.config
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Emlak.exe
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Emlak.pdb
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\EntityFramework.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\FluentValidation.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\System.ComponentModel.Primitives.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\System.ValueTuple.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\EnvDTE.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.Dmf.Common.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.Diagnostics.STrace.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.RegSvrEnum.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\stdole.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\EnvDTE80.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\VSLangProj.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\VSLangProj80.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.SqlTDiagM.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\VSLangProj2.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\EntityFramework.xml
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\FluentValidation.xml
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\System.ValueTuple.xml
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.csprojAssemblyReference.cache
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.Helper.ExcelHelper.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.Properties.Resources.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.BaseForm.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.CashBook.FrmCashBookAdd.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.CashBook.FrmCashBookList.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractAdd.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractEdit.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractList.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractPartyAdd.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractWriter.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmDebtAdd.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.FrmMain.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Invoice.FrmInvoicePrepare.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Invoice.FrmInvoiceShow.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Person.FrmPersonAdd.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Person.FrmPersonDetail.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Person.FrmPersonList.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Realty.FrmRealtyAdd.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Realty.FrmRealtyList.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Rental.FrmRentalAdd.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Settings.FrmAbout.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Settings.FrmLogin.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Settings.FrmLoginSetting.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmMonthlyReportList.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmUpcomingList.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmYearlyReportList.resources
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.csproj.GenerateResource.cache
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.csproj.CoreCompileInputs.cache
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.csproj.CopyComplete
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.exe
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.pdb
+C:\Users\Hatice\Desktop\Emlak\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmDebtsToLandlord.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Emlak.exe.config
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Emlak.exe
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Emlak.pdb
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\EntityFramework.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\FluentValidation.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\System.ComponentModel.Primitives.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\System.ValueTuple.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\EnvDTE.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.Dmf.Common.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.Diagnostics.STrace.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.RegSvrEnum.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\stdole.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\EnvDTE80.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\VSLangProj.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\VSLangProj80.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.SqlServer.SqlTDiagM.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\VSLangProj2.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\EntityFramework.xml
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\FluentValidation.xml
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\System.ValueTuple.xml
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.csprojAssemblyReference.cache
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.Helper.ExcelHelper.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.Properties.Resources.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.BaseForm.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.CashBook.FrmCashBookAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.CashBook.FrmCashBookList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractEdit.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractExpired.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractPartyAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractWriter.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmDebtAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.FrmMain.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Invoice.FrmInvoicePrepare.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Invoice.FrmInvoiceShow.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Person.FrmPersonAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Person.FrmPersonDetail.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Person.FrmPersonList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Realty.FrmRealtyAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Realty.FrmRealtyList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Rental.FrmRentalAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Settings.FrmAbout.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Settings.FrmLogin.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Settings.FrmLoginSetting.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmDebtsToLandlord.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmMonthlyReportList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmUpcomingList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmYearlyReportList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.csproj.GenerateResource.cache
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.csproj.CoreCompileInputs.cache
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.csproj.CopyComplete
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.exe
+C:\Users\Hatice\Desktop\EMLAK PROJE\Emlak\Emlak\obj\Debug\Emlak.pdb
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Emlak.exe.config
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Emlak.exe
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Emlak.pdb
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\EntityFramework.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\FluentValidation.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\System.ComponentModel.Primitives.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\System.ValueTuple.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\EnvDTE.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.SqlServer.Dmf.Common.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.SqlServer.Diagnostics.STrace.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.SqlServer.RegSvrEnum.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\stdole.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\EnvDTE80.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\VSLangProj.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\VSLangProj80.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.SqlServer.SqlTDiagM.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\VSLangProj2.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\EntityFramework.xml
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\FluentValidation.xml
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\System.ValueTuple.xml
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.csprojAssemblyReference.cache
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.Helper.ExcelHelper.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.Properties.Resources.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.BaseForm.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.CashBook.FrmCashBookAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.CashBook.FrmCashBookList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractEdit.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractExpired.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractPartyAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmContractWriter.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Contract.FrmDebtAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.FrmMain.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Invoice.FrmInvoicePrepare.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Invoice.FrmInvoiceShow.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Person.FrmPersonAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Person.FrmPersonDetail.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Person.FrmPersonList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Realty.FrmRealtyAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Realty.FrmRealtyList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Rental.FrmRentalAdd.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Settings.FrmAbout.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Settings.FrmBackupRestore.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Settings.FrmLogin.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Settings.FrmLoginSetting.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Settings.FrmReportSettings.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmDebtsToLandlord.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmMonthlyReportList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmUpcomingList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.UI.Upcoming.FrmYearlyReportList.resources
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.csproj.GenerateResource.cache
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.csproj.CoreCompileInputs.cache
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.csproj.CopyComplete
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.exe
+C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\obj\Debug\Emlak.pdb
