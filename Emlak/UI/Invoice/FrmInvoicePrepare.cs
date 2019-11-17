@@ -95,6 +95,7 @@ namespace Emlak.UI.Invoice
 
             FrmInvoiceShow frmInvoiceShow = new FrmInvoiceShow();
             frmInvoiceShow.Parameters = parameters;
+            frmInvoiceShow.Report = cmbInvoince.SelectedItem.ToString();
             frmInvoiceShow.ShowDialog();
         }
 
@@ -136,6 +137,10 @@ namespace Emlak.UI.Invoice
                     }
                 }
             }
+
+
+            cmbInvoince.SelectedIndex = 0;
+
 
         }
 

@@ -147,7 +147,7 @@
             // 
             // btnLastMonth
             // 
-            this.btnLastMonth.Location = new System.Drawing.Point(94, 231);
+            this.btnLastMonth.Location = new System.Drawing.Point(94, 252);
             this.btnLastMonth.Name = "btnLastMonth";
             this.btnLastMonth.Size = new System.Drawing.Size(139, 23);
             this.btnLastMonth.TabIndex = 7;
@@ -157,7 +157,7 @@
             // 
             // btnLastWeek
             // 
-            this.btnLastWeek.Location = new System.Drawing.Point(94, 202);
+            this.btnLastWeek.Location = new System.Drawing.Point(94, 223);
             this.btnLastWeek.Name = "btnLastWeek";
             this.btnLastWeek.Size = new System.Drawing.Size(139, 23);
             this.btnLastWeek.TabIndex = 6;
@@ -167,7 +167,7 @@
             // 
             // btnFilter
             // 
-            this.btnFilter.Location = new System.Drawing.Point(94, 144);
+            this.btnFilter.Location = new System.Drawing.Point(94, 165);
             this.btnFilter.Name = "btnFilter";
             this.btnFilter.Size = new System.Drawing.Size(139, 23);
             this.btnFilter.TabIndex = 4;
@@ -245,6 +245,8 @@
             // 
             // statusStrip2
             // 
+            this.statusStrip2.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::Emlak.Properties.Settings.Default, "Font", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.statusStrip2.Font = global::Emlak.Properties.Settings.Default.Font;
             this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblTotalRecord});
             this.statusStrip2.Location = new System.Drawing.Point(3, 392);
@@ -295,7 +297,7 @@
             // 
             // btnToday
             // 
-            this.btnToday.Location = new System.Drawing.Point(94, 173);
+            this.btnToday.Location = new System.Drawing.Point(94, 194);
             this.btnToday.Name = "btnToday";
             this.btnToday.Size = new System.Drawing.Size(139, 23);
             this.btnToday.TabIndex = 5;
@@ -305,7 +307,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(94, 260);
+            this.btnClear.Location = new System.Drawing.Point(94, 281);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(139, 23);
             this.btnClear.TabIndex = 8;
@@ -322,6 +324,7 @@
             this.Controls.Add(this.groupBox4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
             this.MaximizeBox = true;
+            this.MinimumSize = new System.Drawing.Size(800, 480);
             this.Name = "FrmCashBookList";
             this.Text = "Kasa Raporu";
             this.Load += new System.EventHandler(this.FrmCashBookList_Load);

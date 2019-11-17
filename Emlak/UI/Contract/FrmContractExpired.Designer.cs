@@ -52,10 +52,10 @@
             this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.yazdırToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.sözleşmeyiAktiveEtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox4.SuspendLayout();
             this.stsPerson.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgExpiredContracts)).BeginInit();
@@ -235,6 +235,8 @@
             // 
             // stsPerson
             // 
+            this.stsPerson.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::Emlak.Properties.Settings.Default, "Font", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.stsPerson.Font = global::Emlak.Properties.Settings.Default.Font;
             this.stsPerson.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblTotalRecord});
             this.stsPerson.Location = new System.Drawing.Point(3, 392);
@@ -284,7 +286,7 @@
             this.sözleşmeyiAktiveEtToolStripMenuItem});
             this.cntxContractList.Name = "cntxPersonList";
             this.cntxContractList.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.cntxContractList.Size = new System.Drawing.Size(182, 120);
+            this.cntxContractList.Size = new System.Drawing.Size(182, 98);
             // 
             // düzenleToolStripMenuItem
             // 
@@ -307,6 +309,18 @@
             this.yazdırToolStripMenuItem.Text = "Yazdır";
             this.yazdırToolStripMenuItem.Click += new System.EventHandler(this.yazdırToolStripMenuItem_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(178, 6);
+            // 
+            // sözleşmeyiAktiveEtToolStripMenuItem
+            // 
+            this.sözleşmeyiAktiveEtToolStripMenuItem.Name = "sözleşmeyiAktiveEtToolStripMenuItem";
+            this.sözleşmeyiAktiveEtToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.sözleşmeyiAktiveEtToolStripMenuItem.Text = "Sözleşmeyi Aktive Et";
+            this.sözleşmeyiAktiveEtToolStripMenuItem.Click += new System.EventHandler(this.sözleşmeyiAktiveEtToolStripMenuItem_Click);
+            // 
             // groupBox3
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -326,18 +340,6 @@
             this.silToolStripMenuItem.Name = "silToolStripMenuItem";
             this.silToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.silToolStripMenuItem.Text = "Sil";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(178, 6);
-            // 
-            // sözleşmeyiAktiveEtToolStripMenuItem
-            // 
-            this.sözleşmeyiAktiveEtToolStripMenuItem.Name = "sözleşmeyiAktiveEtToolStripMenuItem";
-            this.sözleşmeyiAktiveEtToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.sözleşmeyiAktiveEtToolStripMenuItem.Text = "Sözleşmeyi Aktive Et";
-            this.sözleşmeyiAktiveEtToolStripMenuItem.Click += new System.EventHandler(this.sözleşmeyiAktiveEtToolStripMenuItem_Click);
             // 
             // FrmContractExpired
             // 

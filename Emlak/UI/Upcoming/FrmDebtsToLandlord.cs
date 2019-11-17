@@ -67,6 +67,7 @@ namespace Emlak.UI.Upcoming
 
         private void FrmDebtsToLandlord_Load(object sender, EventArgs e)
         {
+            dgDebtList.DoubleBuffered(true);
             LoadDebts();
         }
 

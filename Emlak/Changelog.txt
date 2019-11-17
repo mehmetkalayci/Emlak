@@ -1,0 +1,7 @@
+﻿16.11.2019
+- FrmDebtsToLandLord'a double buffered eklendi
+- FrmMonthlyReportList, FrmUpcomingList, FrmYearlyReportList grid renklendirmedeki yavaşlama problemi çözüldü
+  (form_shown kısmına still metodu eklendi)
+- Otomatik yazılım güncelleme özelliği eklendi
+- Rapor eklendi
+- Arkaplan seçimi eklendi

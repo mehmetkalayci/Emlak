@@ -143,6 +143,8 @@
             // 
             // stsPerson
             // 
+            this.stsPerson.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::Emlak.Properties.Settings.Default, "Font", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.stsPerson.Font = global::Emlak.Properties.Settings.Default.Font;
             this.stsPerson.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblTotalRecord});
             this.stsPerson.Location = new System.Drawing.Point(3, 392);

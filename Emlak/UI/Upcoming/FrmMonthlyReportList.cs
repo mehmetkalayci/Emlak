@@ -21,6 +21,29 @@ namespace Emlak.UI.Upcoming
 
         Model.EmlakEntities db = new Model.EmlakEntities();
 
+        private void ApplyStyle2Grid()
+        {
+            DateTime today = DateTime.Now;
+            for (int i = 0; i < dgUpcoming.Rows.Count; i++)
+            {
+                if (bool.Parse(dgUpcoming.Rows[i].Cells["IsPaidByTenant"].Value.ToString()))
+                {
+                    dgUpcoming.Rows[i].DefaultCellStyle.BackColor = Color.GreenYellow;
+                }
+                else
+                {
+                    if (DateTime.Parse(dgUpcoming.Rows[i].Cells["DueDate"].Value.ToString()) > today)
+                    {
+                        dgUpcoming.Rows[i].DefaultCellStyle.BackColor = Color.White;
+                    }
+                    else
+                    {
+                        dgUpcoming.Rows[i].DefaultCellStyle.BackColor = Color.OrangeRed;
+                    }
+                }
+            }
+        }
+
         public void LoadMonthlyReport()
         {
 
@@ -55,6 +78,7 @@ namespace Emlak.UI.Upcoming
             dgUpcoming.Columns[0].Visible = dgUpcoming.Columns[2].Visible = false;
             lblTotalRecord.Text = "Kayıt sayısı: " + debtList.Count;
 
+            ApplyStyle2Grid();
         }
 
         private void btnFilter_Click(object sender, EventArgs e)
@@ -66,36 +90,6 @@ namespace Emlak.UI.Upcoming
         {
             ExcelHelper excelHelper = new ExcelHelper(dgUpcoming, "Aylık Rapor.xlsx");
             excelHelper.ShowDialog();
-        }
-
-        private void dgUpcoming_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        {
-            DateTime today = DateTime.Now;
-            for (int i = 0; i < dgUpcoming.Rows.Count; i++)
-            {
-                if (bool.Parse(dgUpcoming.Rows[i].Cells["IsPaidByTenant"].Value.ToString()))
-                {
-                    dgUpcoming.Rows[i].DefaultCellStyle.BackColor = Color.GreenYellow;
-                }
-                else
-                {
-                    if (DateTime.Parse(dgUpcoming.Rows[i].Cells["DueDate"].Value.ToString()) > today)
-                    {
-                        dgUpcoming.Rows[i].DefaultCellStyle.BackColor = Color.White;
-                    }
-                    else
-                    {
-                        dgUpcoming.Rows[i].DefaultCellStyle.BackColor = Color.OrangeRed;
-                    }
-                }
-            }
-        }
-
-
-        private void FrmMonthlyReportList_Load(object sender, EventArgs e)
-        {
-            dgUpcoming.DoubleBuffered(true);
-            LoadMonthlyReport();
         }
 
         private void dgUpcoming_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -113,6 +107,12 @@ namespace Emlak.UI.Upcoming
             {
                 LoadMonthlyReport();
             }
+        }
+
+        private void FrmMonthlyReportList_Shown(object sender, EventArgs e)
+        {
+            dgUpcoming.DoubleBuffered(true);
+            LoadMonthlyReport();
         }
     }
 }

@@ -105,8 +105,10 @@
             // 
             // btnAll
             // 
+            this.btnAll.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAll.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAll.Location = new System.Drawing.Point(86, 343);
+            this.btnAll.Location = new System.Drawing.Point(87, 353);
             this.btnAll.Name = "btnAll";
             this.btnAll.Size = new System.Drawing.Size(75, 23);
             this.btnAll.TabIndex = 8;
@@ -116,8 +118,10 @@
             // 
             // btnClear
             // 
+            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClear.Location = new System.Drawing.Point(12, 372);
+            this.btnClear.Location = new System.Drawing.Point(13, 382);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(150, 23);
             this.btnClear.TabIndex = 9;
@@ -127,8 +131,10 @@
             // 
             // btnFilter
             // 
+            this.btnFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFilter.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFilter.Location = new System.Drawing.Point(12, 343);
+            this.btnFilter.Location = new System.Drawing.Point(13, 353);
             this.btnFilter.Name = "btnFilter";
             this.btnFilter.Size = new System.Drawing.Size(75, 23);
             this.btnFilter.TabIndex = 7;
@@ -259,6 +265,8 @@
             // 
             // stsPerson
             // 
+            this.stsPerson.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::Emlak.Properties.Settings.Default, "Font", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.stsPerson.Font = global::Emlak.Properties.Settings.Default.Font;
             this.stsPerson.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblTotalRecord});
             this.stsPerson.Location = new System.Drawing.Point(3, 392);

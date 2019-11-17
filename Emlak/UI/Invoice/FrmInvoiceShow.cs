@@ -20,12 +20,19 @@ namespace Emlak.UI.Invoice
 
         public ReportParameter[] Parameters { get; set; }
 
-
+        public String Report { get; set; }
         private void FrmInvoiceShow_Load(object sender, EventArgs e)
         {
-            this.reportViewer1.LocalReport.SetParameters(this.Parameters);
-            this.reportViewer1.RefreshReport();
+            try
+            {
+                this.reportViewer1.LocalReport.ReportEmbeddedResource = this.Report;
+                this.reportViewer1.LocalReport.SetParameters(this.Parameters);
+                this.reportViewer1.RefreshReport();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
-        
     }
 }

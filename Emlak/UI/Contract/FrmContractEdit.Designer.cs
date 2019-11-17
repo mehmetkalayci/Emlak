@@ -339,6 +339,7 @@
             // 
             // delSelectedPerson
             // 
+            this.delSelectedPerson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.delSelectedPerson.Location = new System.Drawing.Point(531, 470);
             this.delSelectedPerson.Name = "delSelectedPerson";
             this.delSelectedPerson.Size = new System.Drawing.Size(75, 23);
@@ -349,6 +350,7 @@
             // 
             // btnAddContractParty
             // 
+            this.btnAddContractParty.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddContractParty.Location = new System.Drawing.Point(612, 470);
             this.btnAddContractParty.Name = "btnAddContractParty";
             this.btnAddContractParty.Size = new System.Drawing.Size(75, 23);
@@ -396,17 +398,17 @@
             // 
             // txtSpecialConditions
             // 
-            this.txtSpecialConditions.Location = new System.Drawing.Point(142, 86);
+            this.txtSpecialConditions.Location = new System.Drawing.Point(142, 96);
             this.txtSpecialConditions.Multiline = true;
             this.txtSpecialConditions.Name = "txtSpecialConditions";
             this.txtSpecialConditions.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtSpecialConditions.Size = new System.Drawing.Size(400, 365);
+            this.txtSpecialConditions.Size = new System.Drawing.Size(400, 325);
             this.txtSpecialConditions.TabIndex = 1;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(72, 86);
+            this.label25.Location = new System.Drawing.Point(72, 96);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(64, 13);
             this.label25.TabIndex = 417;
@@ -452,6 +454,7 @@
             // 
             // btnDelSelectedRental
             // 
+            this.btnDelSelectedRental.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelSelectedRental.Location = new System.Drawing.Point(531, 470);
             this.btnDelSelectedRental.Name = "btnDelSelectedRental";
             this.btnDelSelectedRental.Size = new System.Drawing.Size(75, 23);
@@ -462,6 +465,7 @@
             // 
             // btnAddRental
             // 
+            this.btnAddRental.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddRental.Location = new System.Drawing.Point(612, 470);
             this.btnAddRental.Name = "btnAddRental";
             this.btnAddRental.Size = new System.Drawing.Size(75, 23);
@@ -475,6 +479,9 @@
             this.dgRentals.AccessibleName = "";
             this.dgRentals.AllowUserToAddRows = false;
             this.dgRentals.AllowUserToDeleteRows = false;
+            this.dgRentals.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgRentals.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgRentals.BackgroundColor = System.Drawing.Color.White;
             this.dgRentals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -518,6 +525,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(408, 470);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 23);
@@ -528,6 +536,7 @@
             // 
             // btnDelSelectedDebt
             // 
+            this.btnDelSelectedDebt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelSelectedDebt.Location = new System.Drawing.Point(531, 470);
             this.btnDelSelectedDebt.Name = "btnDelSelectedDebt";
             this.btnDelSelectedDebt.Size = new System.Drawing.Size(75, 23);
@@ -538,6 +547,7 @@
             // 
             // btnAddDebt
             // 
+            this.btnAddDebt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddDebt.Location = new System.Drawing.Point(612, 470);
             this.btnAddDebt.Name = "btnAddDebt";
             this.btnAddDebt.Size = new System.Drawing.Size(75, 23);
@@ -551,6 +561,9 @@
             this.dgDebts.AccessibleName = "";
             this.dgDebts.AllowUserToAddRows = false;
             this.dgDebts.AllowUserToDeleteRows = false;
+            this.dgDebts.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgDebts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgDebts.BackgroundColor = System.Drawing.Color.White;
             this.dgDebts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

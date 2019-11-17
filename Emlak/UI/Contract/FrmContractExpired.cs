@@ -65,7 +65,7 @@ namespace Emlak.UI.Contract
             }
             if (txtRealtyDefinition.Text.Trim().Length > 0)
             {
-                contracts = contracts.Where(q => q.RealtyDefinition.ToString().Contains(txtRealtyDefinition.Text.ToLower()));
+                contracts = contracts.Where(q => q.RealtyDefinition.ToString().ToLower().Contains(txtRealtyDefinition.Text.ToLower()));
             }
             if (txtLandlord.Text.Trim().Length > 0)
             {
@@ -100,6 +100,7 @@ namespace Emlak.UI.Contract
 
         private void FrmContractExpired_Load(object sender, EventArgs e)
         {
+            dgExpiredContracts.DoubleBuffered(true);
             LoadExpiredContracts();
         }
 

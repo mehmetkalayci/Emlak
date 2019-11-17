@@ -36,6 +36,8 @@
             this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yazdırToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.sözleşmeyiİptalEtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stsPerson = new System.Windows.Forms.StatusStrip();
             this.lblTotalRecord = new System.Windows.Forms.ToolStripStatusLabel();
             this.dtEndingDate = new System.Windows.Forms.DateTimePicker();
@@ -54,8 +56,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtRealtyDefinition = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.sözleşmeyiİptalEtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgContracts)).BeginInit();
             this.cntxContractList.SuspendLayout();
@@ -112,38 +112,52 @@
             this.sözleşmeyiİptalEtToolStripMenuItem});
             this.cntxContractList.Name = "cntxPersonList";
             this.cntxContractList.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.cntxContractList.Size = new System.Drawing.Size(181, 142);
+            this.cntxContractList.Size = new System.Drawing.Size(172, 120);
             // 
             // yeniEkleToolStripMenuItem
             // 
             this.yeniEkleToolStripMenuItem.Name = "yeniEkleToolStripMenuItem";
-            this.yeniEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.yeniEkleToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.yeniEkleToolStripMenuItem.Text = "Yeni Ekle";
             this.yeniEkleToolStripMenuItem.Click += new System.EventHandler(this.yeniEkleToolStripMenuItem_Click);
             // 
             // düzenleToolStripMenuItem
             // 
             this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
-            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.düzenleToolStripMenuItem.Text = "Düzenle";
             this.düzenleToolStripMenuItem.Click += new System.EventHandler(this.düzenleToolStripMenuItem_Click);
             // 
             // silToolStripMenuItem
             // 
             this.silToolStripMenuItem.Name = "silToolStripMenuItem";
-            this.silToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.silToolStripMenuItem.Text = "Sil";
             this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
             // 
             // yazdırToolStripMenuItem
             // 
             this.yazdırToolStripMenuItem.Name = "yazdırToolStripMenuItem";
-            this.yazdırToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.yazdırToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.yazdırToolStripMenuItem.Text = "Yazdır";
             this.yazdırToolStripMenuItem.Click += new System.EventHandler(this.yazdırToolStripMenuItem_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(168, 6);
+            // 
+            // sözleşmeyiİptalEtToolStripMenuItem
+            // 
+            this.sözleşmeyiİptalEtToolStripMenuItem.Name = "sözleşmeyiİptalEtToolStripMenuItem";
+            this.sözleşmeyiİptalEtToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.sözleşmeyiİptalEtToolStripMenuItem.Text = "Sözleşmeyi İptal Et";
+            this.sözleşmeyiİptalEtToolStripMenuItem.Click += new System.EventHandler(this.sözleşmeyiİptalEtToolStripMenuItem_Click);
+            // 
             // stsPerson
             // 
+            this.stsPerson.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::Emlak.Properties.Settings.Default, "Font", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.stsPerson.Font = global::Emlak.Properties.Settings.Default.Font;
             this.stsPerson.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblTotalRecord});
             this.stsPerson.Location = new System.Drawing.Point(3, 392);
@@ -329,18 +343,6 @@
             this.label5.Size = new System.Drawing.Size(36, 13);
             this.label5.TabIndex = 7;
             this.label5.Text = "Tanım";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
-            // 
-            // sözleşmeyiİptalEtToolStripMenuItem
-            // 
-            this.sözleşmeyiİptalEtToolStripMenuItem.Name = "sözleşmeyiİptalEtToolStripMenuItem";
-            this.sözleşmeyiİptalEtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sözleşmeyiİptalEtToolStripMenuItem.Text = "Sözleşmeyi İptal Et";
-            this.sözleşmeyiİptalEtToolStripMenuItem.Click += new System.EventHandler(this.sözleşmeyiİptalEtToolStripMenuItem_Click);
             // 
             // FrmContractList
             // 

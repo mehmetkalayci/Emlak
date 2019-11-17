@@ -78,6 +78,9 @@
     <TargetZone>Custom</TargetZone>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoUpdater.NET, Version=1.5.8.0, Culture=neutral, PublicKeyToken=501435c91b35f4bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autoupdater.NET.Official.1.5.8\lib\net40\AutoUpdater.NET.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -110,10 +113,6 @@
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.SqlServer.Smo, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
@@ -339,12 +338,6 @@
     <Compile Include="UI\Settings\FrmAbout.Designer.cs">
       <DependentUpon>FrmAbout.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Settings\FrmBackupRestore.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Settings\FrmBackupRestore.Designer.cs">
-      <DependentUpon>FrmBackupRestore.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\Settings\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,6 +355,12 @@
     </Compile>
     <Compile Include="UI\Settings\FrmReportSettings.Designer.cs">
       <DependentUpon>FrmReportSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Settings\FrmSelectBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Settings\FrmSelectBackground.Designer.cs">
+      <DependentUpon>FrmSelectBackground.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Upcoming\FrmDebtsToLandlord.cs">
       <SubType>Form</SubType>
@@ -461,9 +460,6 @@
     <EmbeddedResource Include="UI\Settings\FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Settings\FrmBackupRestore.resx">
-      <DependentUpon>FrmBackupRestore.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Settings\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -472,6 +468,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Settings\FrmReportSettings.resx">
       <DependentUpon>FrmReportSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Settings\FrmSelectBackground.resx">
+      <DependentUpon>FrmSelectBackground.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Upcoming\FrmDebtsToLandlord.resx">
       <DependentUpon>FrmDebtsToLandlord.cs</DependentUpon>
@@ -507,6 +506,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <EmbeddedResource Include="Report\ReportInvoice.rdlc" />
+    <EmbeddedResource Include="Report\ReportInvoiceMini.rdlc" />
     <None Include="Resources\contract.doc" />
   </ItemGroup>
   <ItemGroup>
@@ -530,6 +530,25 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Arkaplan\1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Arkaplan\2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Arkaplan\3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Arkaplan\4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Arkaplan\5.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Arkaplan\6.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Changelog.txt" />
     <Content Include="Model\ModelEmlak.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelEmlak.edmx</DependentUpon>
@@ -554,9 +573,7 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\arsevlogo.jpg" />
     <None Include="Resources\loading.gif" />
-    <None Include="Resources\inceemlak.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

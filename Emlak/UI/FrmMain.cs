@@ -19,15 +19,18 @@ using System.Diagnostics;
 using System.Deployment.Application;
 using System.Data.Entity.SqlServer;
 using System.Data.Entity;
+using AutoUpdaterDotNET;
 
 namespace Emlak.UI
 {
-    public partial class FrmMain : BaseForm
+    public partial class FrmMain : BaseForm, INotifyPropertyChanged
     {
         public FrmMain()
         {
             InitializeComponent();
         }
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public void LoadUpcomings()
         {
@@ -109,7 +112,7 @@ namespace Emlak.UI
 
         private void veritabanınıYedekleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormHelper.ShowDialog<FrmBackupRestore>();
+            //FormHelper.ShowDialog<FrmBackupRestore>();
         }
 
         private void yıllıkRaporToolStripMenuItem_Click(object sender, EventArgs e)
@@ -172,6 +175,31 @@ namespace Emlak.UI
         private void lblCompany_Click(object sender, EventArgs e)
         {
             FormHelper.ShowDialog<FrmReportSettings>();
+        }
+
+        private void arkaplanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHelper.ShowDialog<FrmSelectBackground>();
+        }
+
+        private void fontTipiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FontDialog fontDialog = new FontDialog();
+            if (fontDialog.ShowDialog() == DialogResult.OK)
+            {
+                Properties.Settings.Default.Font = fontDialog.Font;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void FrmMain_Shown(object sender, EventArgs e)
+        {
+            AutoUpdater.Start("http://telgrafla.com/emlakupdate/app.xml");
+
+            if (!Properties.Settings.Default.NoBackground && System.IO.File.Exists(Properties.Settings.Default.Background))
+            {
+                BackgroundImage = Image.FromFile(Properties.Settings.Default.Background);
+            }
         }
     }
 }

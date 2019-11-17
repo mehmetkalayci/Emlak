@@ -87,7 +87,6 @@
             this.dgUpcoming.Size = new System.Drawing.Size(577, 376);
             this.dgUpcoming.TabIndex = 7;
             this.dgUpcoming.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgUpcoming_CellContentDoubleClick);
-            this.dgUpcoming.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgUpcoming_CellFormatting);
             // 
             // contextMenuStrip1
             // 
@@ -105,6 +104,8 @@
             // 
             // stsPerson
             // 
+            this.stsPerson.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::Emlak.Properties.Settings.Default, "Font", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.stsPerson.Font = global::Emlak.Properties.Settings.Default.Font;
             this.stsPerson.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblTotalRecord});
             this.stsPerson.Location = new System.Drawing.Point(3, 392);
@@ -248,7 +249,7 @@
             this.MaximizeBox = true;
             this.Name = "FrmYearlyReportList";
             this.Text = "Yıllık Rapor";
-            this.Load += new System.EventHandler(this.FrmYearlyReportList_Load);
+            this.Shown += new System.EventHandler(this.FrmYearlyReportList_Shown);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgUpcoming)).EndInit();

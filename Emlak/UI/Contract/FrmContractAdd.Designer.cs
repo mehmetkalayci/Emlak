@@ -817,17 +817,17 @@
             // 
             // txtSpecialConditions
             // 
-            this.txtSpecialConditions.Location = new System.Drawing.Point(142, 86);
+            this.txtSpecialConditions.Location = new System.Drawing.Point(142, 96);
             this.txtSpecialConditions.Multiline = true;
             this.txtSpecialConditions.Name = "txtSpecialConditions";
             this.txtSpecialConditions.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtSpecialConditions.Size = new System.Drawing.Size(400, 365);
+            this.txtSpecialConditions.Size = new System.Drawing.Size(400, 325);
             this.txtSpecialConditions.TabIndex = 1;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(72, 86);
+            this.label25.Location = new System.Drawing.Point(72, 96);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(64, 13);
             this.label25.TabIndex = 417;
@@ -903,6 +903,9 @@
             this.dgRentals.AccessibleName = "";
             this.dgRentals.AllowUserToAddRows = false;
             this.dgRentals.AllowUserToDeleteRows = false;
+            this.dgRentals.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgRentals.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgRentals.BackgroundColor = System.Drawing.Color.White;
             this.dgRentals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -917,7 +920,7 @@
             this.dgRentals.ReadOnly = true;
             this.dgRentals.RowHeadersWidth = 25;
             this.dgRentals.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgRentals.Size = new System.Drawing.Size(776, 422);
+            this.dgRentals.Size = new System.Drawing.Size(776, 464);
             this.dgRentals.TabIndex = 3;
             // 
             // Definition
@@ -989,6 +992,9 @@
             this.dgDebts.AccessibleName = "";
             this.dgDebts.AllowUserToAddRows = false;
             this.dgDebts.AllowUserToDeleteRows = false;
+            this.dgDebts.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgDebts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgDebts.BackgroundColor = System.Drawing.Color.White;
             this.dgDebts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1003,7 +1009,7 @@
             this.dgDebts.ReadOnly = true;
             this.dgDebts.RowHeadersWidth = 25;
             this.dgDebts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgDebts.Size = new System.Drawing.Size(776, 422);
+            this.dgDebts.Size = new System.Drawing.Size(776, 464);
             this.dgDebts.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1

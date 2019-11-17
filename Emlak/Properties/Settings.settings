@@ -17,5 +17,17 @@
     <Setting Name="CompanyAddress" Type="System.String" Scope="User">
       <Value Profile="(Default)">adres</Value>
     </Setting>
+    <Setting Name="Background" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Font" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Microsoft Sans Serif, 8.25pt</Value>
+    </Setting>
+    <Setting Name="NoBackground" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DefaultInvoiceType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Emlak.Report.ReportInvoice.rdlc</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

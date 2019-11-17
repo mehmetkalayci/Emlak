@@ -49,8 +49,9 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Location = new System.Drawing.Point(189, 223);
+            this.btnCancel.Location = new System.Drawing.Point(189, 225);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 9;
@@ -60,8 +61,9 @@
             // 
             // btnSave
             // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Location = new System.Drawing.Point(270, 223);
+            this.btnSave.Location = new System.Drawing.Point(270, 225);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 8;
@@ -99,10 +101,9 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label32.Location = new System.Drawing.Point(45, 70);
+            this.label32.Location = new System.Drawing.Point(46, 72);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(44, 15);
+            this.label32.Size = new System.Drawing.Size(43, 13);
             this.label32.TabIndex = 204;
             this.label32.Text = "İl / İlçe:";
             // 
@@ -128,10 +129,9 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label42.Location = new System.Drawing.Point(29, 178);
+            this.label42.Location = new System.Drawing.Point(36, 180);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(60, 15);
+            this.label42.Size = new System.Drawing.Size(53, 13);
             this.label42.TabIndex = 203;
             this.label42.Text = "Açıklama:";
             // 
@@ -147,10 +147,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(49, 151);
+            this.label4.Location = new System.Drawing.Point(54, 153);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 15);
+            this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 201;
             this.label4.Text = "Daire:";
             // 
@@ -166,10 +165,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(6, 124);
+            this.label3.Location = new System.Drawing.Point(12, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 15);
+            this.label3.Size = new System.Drawing.Size(77, 13);
             this.label3.TabIndex = 199;
             this.label3.Text = "Cadde/Sokak:";
             // 
@@ -185,20 +183,18 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(34, 97);
+            this.label14.Location = new System.Drawing.Point(42, 99);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 15);
+            this.label14.Size = new System.Drawing.Size(47, 13);
             this.label14.TabIndex = 200;
             this.label14.Text = "Mahalle:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(21, 45);
+            this.label2.Location = new System.Drawing.Point(30, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 15);
+            this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 197;
             this.label2.Text = "Emlak Tipi:";
             // 
@@ -214,10 +210,9 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(41, 18);
+            this.label11.Location = new System.Drawing.Point(48, 20);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 15);
+            this.label11.Size = new System.Drawing.Size(41, 13);
             this.label11.TabIndex = 202;
             this.label11.Text = "Tanımı:";
             // 
