@@ -25,17 +25,11 @@ namespace Emlak
 
             System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo;
 
-            
-
-
-            //FrmLicenseChecker frmLicenseChecker = new FrmLicenseChecker();
-            //Application.Run(frmLicenseChecker);
-
             FrmLogin frmLogin = new FrmLogin();
             Application.Run(frmLogin);
 
 
-            if (frmLogin.IsLoggedin=true)
+            if (frmLogin.IsLoggedin = true)
             {
                 Application.Run(new FrmMain());
             }

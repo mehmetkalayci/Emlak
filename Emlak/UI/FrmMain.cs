@@ -24,14 +24,12 @@ using System.IO;
 
 namespace Emlak.UI
 {
-    public partial class FrmMain : BaseForm, INotifyPropertyChanged
+    public partial class FrmMain : BaseForm
     {
         public FrmMain()
         {
             InitializeComponent();
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
 
         public void LoadUpcomings()
         {

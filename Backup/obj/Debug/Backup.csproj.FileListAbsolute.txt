@@ -1,8 +1,0 @@
-C:\Users\hp\Desktop\Emlak\Backup\bin\Debug\Backup.exe.config
-C:\Users\hp\Desktop\Emlak\Backup\bin\Debug\Backup.exe
-C:\Users\hp\Desktop\Emlak\Backup\bin\Debug\Backup.pdb
-C:\Users\hp\Desktop\Emlak\Backup\obj\Debug\Backup.FrmMain.resources
-C:\Users\hp\Desktop\Emlak\Backup\obj\Debug\Backup.Properties.Resources.resources
-C:\Users\hp\Desktop\Emlak\Backup\obj\Debug\Backup.csproj.GenerateResource.cache
-C:\Users\hp\Desktop\Emlak\Backup\obj\Debug\Backup.exe
-C:\Users\hp\Desktop\Emlak\Backup\obj\Debug\Backup.pdb
