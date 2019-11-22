@@ -190,27 +190,27 @@
             // 
             // txtLandlordPhone
             // 
-            this.txtLandlordPhone.Location = new System.Drawing.Point(101, 299);
+            this.txtLandlordPhone.Location = new System.Drawing.Point(103, 302);
             this.txtLandlordPhone.Mask = "(999) 000-0000";
             this.txtLandlordPhone.Name = "txtLandlordPhone";
             this.txtLandlordPhone.Size = new System.Drawing.Size(199, 20);
-            this.txtLandlordPhone.TabIndex = 343;
+            this.txtLandlordPhone.TabIndex = 7;
             // 
             // txtTenantPhone2
             // 
-            this.txtTenantPhone2.Location = new System.Drawing.Point(103, 129);
+            this.txtTenantPhone2.Location = new System.Drawing.Point(103, 127);
             this.txtTenantPhone2.Mask = "(999) 000-0000";
             this.txtTenantPhone2.Name = "txtTenantPhone2";
             this.txtTenantPhone2.Size = new System.Drawing.Size(199, 20);
-            this.txtTenantPhone2.TabIndex = 342;
+            this.txtTenantPhone2.TabIndex = 3;
             // 
             // txtTenantPhone1
             // 
-            this.txtTenantPhone1.Location = new System.Drawing.Point(102, 103);
+            this.txtTenantPhone1.Location = new System.Drawing.Point(103, 101);
             this.txtTenantPhone1.Mask = "(999) 000-0000";
             this.txtTenantPhone1.Name = "txtTenantPhone1";
             this.txtTenantPhone1.Size = new System.Drawing.Size(199, 20);
-            this.txtTenantPhone1.TabIndex = 341;
+            this.txtTenantPhone1.TabIndex = 2;
             // 
             // label30
             // 
@@ -259,7 +259,7 @@
             this.txtTenancy.Name = "txtTenancy";
             this.txtTenancy.ReadOnly = true;
             this.txtTenancy.Size = new System.Drawing.Size(300, 20);
-            this.txtTenancy.TabIndex = 330;
+            this.txtTenancy.TabIndex = 22;
             // 
             // txtPaymentDay
             // 
@@ -268,7 +268,7 @@
             this.txtPaymentDay.Name = "txtPaymentDay";
             this.txtPaymentDay.ReadOnly = true;
             this.txtPaymentDay.Size = new System.Drawing.Size(50, 20);
-            this.txtPaymentDay.TabIndex = 333;
+            this.txtPaymentDay.TabIndex = 26;
             // 
             // txtPaymentType
             // 
@@ -277,7 +277,7 @@
             this.txtPaymentType.Name = "txtPaymentType";
             this.txtPaymentType.ReadOnly = true;
             this.txtPaymentType.Size = new System.Drawing.Size(300, 20);
-            this.txtPaymentType.TabIndex = 333;
+            this.txtPaymentType.TabIndex = 25;
             // 
             // label26
             // 
@@ -295,7 +295,7 @@
             this.txtContractEndingDate.Name = "txtContractEndingDate";
             this.txtContractEndingDate.ReadOnly = true;
             this.txtContractEndingDate.Size = new System.Drawing.Size(150, 20);
-            this.txtContractEndingDate.TabIndex = 332;
+            this.txtContractEndingDate.TabIndex = 21;
             // 
             // txtContractStartingDate
             // 
@@ -304,7 +304,7 @@
             this.txtContractStartingDate.Name = "txtContractStartingDate";
             this.txtContractStartingDate.ReadOnly = true;
             this.txtContractStartingDate.Size = new System.Drawing.Size(150, 20);
-            this.txtContractStartingDate.TabIndex = 331;
+            this.txtContractStartingDate.TabIndex = 20;
             // 
             // txtRentMoneyTotal
             // 
@@ -313,7 +313,7 @@
             this.txtRentMoneyTotal.Name = "txtRentMoneyTotal";
             this.txtRentMoneyTotal.ReadOnly = true;
             this.txtRentMoneyTotal.Size = new System.Drawing.Size(150, 20);
-            this.txtRentMoneyTotal.TabIndex = 332;
+            this.txtRentMoneyTotal.TabIndex = 24;
             // 
             // txtRentMoneyInMonth
             // 
@@ -322,7 +322,7 @@
             this.txtRentMoneyInMonth.Name = "txtRentMoneyInMonth";
             this.txtRentMoneyInMonth.ReadOnly = true;
             this.txtRentMoneyInMonth.Size = new System.Drawing.Size(150, 20);
-            this.txtRentMoneyInMonth.TabIndex = 331;
+            this.txtRentMoneyInMonth.TabIndex = 23;
             // 
             // label27
             // 
@@ -340,7 +340,7 @@
             this.txtAimOfRent.Name = "txtAimOfRent";
             this.txtAimOfRent.ReadOnly = true;
             this.txtAimOfRent.Size = new System.Drawing.Size(300, 20);
-            this.txtAimOfRent.TabIndex = 316;
+            this.txtAimOfRent.TabIndex = 19;
             // 
             // label10
             // 
@@ -358,7 +358,7 @@
             this.txtRealEstateSituation.Name = "txtRealEstateSituation";
             this.txtRealEstateSituation.ReadOnly = true;
             this.txtRealEstateSituation.Size = new System.Drawing.Size(300, 20);
-            this.txtRealEstateSituation.TabIndex = 315;
+            this.txtRealEstateSituation.TabIndex = 18;
             // 
             // label15
             // 
@@ -385,7 +385,7 @@
             this.txtStreet.Name = "txtStreet";
             this.txtStreet.ReadOnly = true;
             this.txtStreet.Size = new System.Drawing.Size(300, 20);
-            this.txtStreet.TabIndex = 313;
+            this.txtStreet.TabIndex = 14;
             // 
             // label19
             // 
@@ -403,7 +403,7 @@
             this.txtContractDefinition.Name = "txtContractDefinition";
             this.txtContractDefinition.ReadOnly = true;
             this.txtContractDefinition.Size = new System.Drawing.Size(300, 20);
-            this.txtContractDefinition.TabIndex = 312;
+            this.txtContractDefinition.TabIndex = 12;
             // 
             // txtNeighborhood
             // 
@@ -412,7 +412,7 @@
             this.txtNeighborhood.Name = "txtNeighborhood";
             this.txtNeighborhood.ReadOnly = true;
             this.txtNeighborhood.Size = new System.Drawing.Size(300, 20);
-            this.txtNeighborhood.TabIndex = 312;
+            this.txtNeighborhood.TabIndex = 13;
             // 
             // label20
             // 
@@ -430,7 +430,7 @@
             this.txtRealEstateType.Name = "txtRealEstateType";
             this.txtRealEstateType.ReadOnly = true;
             this.txtRealEstateType.Size = new System.Drawing.Size(300, 20);
-            this.txtRealEstateType.TabIndex = 314;
+            this.txtRealEstateType.TabIndex = 17;
             // 
             // txtCityTown
             // 
@@ -439,7 +439,7 @@
             this.txtCityTown.Name = "txtCityTown";
             this.txtCityTown.ReadOnly = true;
             this.txtCityTown.Size = new System.Drawing.Size(300, 20);
-            this.txtCityTown.TabIndex = 314;
+            this.txtCityTown.TabIndex = 16;
             // 
             // txtApartment
             // 
@@ -448,7 +448,7 @@
             this.txtApartment.Name = "txtApartment";
             this.txtApartment.ReadOnly = true;
             this.txtApartment.Size = new System.Drawing.Size(300, 20);
-            this.txtApartment.TabIndex = 314;
+            this.txtApartment.TabIndex = 15;
             // 
             // label21
             // 
@@ -482,7 +482,7 @@
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Bisque;
             this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label29.Location = new System.Drawing.Point(101, 213);
+            this.label29.Location = new System.Drawing.Point(103, 218);
             this.label29.Name = "label29";
             this.label29.Padding = new System.Windows.Forms.Padding(2, 2, 5, 2);
             this.label29.Size = new System.Drawing.Size(160, 19);
@@ -495,7 +495,7 @@
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Bisque;
             this.label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label28.Location = new System.Drawing.Point(101, 17);
+            this.label28.Location = new System.Drawing.Point(103, 17);
             this.label28.Name = "label28";
             this.label28.Padding = new System.Windows.Forms.Padding(2, 2, 5, 2);
             this.label28.Size = new System.Drawing.Size(130, 19);
@@ -506,7 +506,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 136);
+            this.label2.Location = new System.Drawing.Point(37, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 136;
@@ -515,7 +515,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 110);
+            this.label3.Location = new System.Drawing.Point(37, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 135;
@@ -524,18 +524,18 @@
             // txtTenantExplanation
             // 
             this.txtTenantExplanation.BackColor = System.Drawing.Color.White;
-            this.txtTenantExplanation.Location = new System.Drawing.Point(101, 155);
+            this.txtTenantExplanation.Location = new System.Drawing.Point(103, 153);
             this.txtTenantExplanation.MaxLength = 500;
             this.txtTenantExplanation.Multiline = true;
             this.txtTenantExplanation.Name = "txtTenantExplanation";
             this.txtTenantExplanation.ReadOnly = true;
-            this.txtTenantExplanation.Size = new System.Drawing.Size(200, 40);
-            this.txtTenantExplanation.TabIndex = 128;
+            this.txtTenantExplanation.Size = new System.Drawing.Size(199, 40);
+            this.txtTenantExplanation.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(37, 157);
+            this.label4.Location = new System.Drawing.Point(39, 155);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 134;
@@ -544,18 +544,17 @@
             // txtTenantFullName
             // 
             this.txtTenantFullName.BackColor = System.Drawing.Color.White;
-            this.txtTenantFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTenantFullName.Location = new System.Drawing.Point(101, 76);
+            this.txtTenantFullName.Location = new System.Drawing.Point(103, 75);
             this.txtTenantFullName.MaxLength = 50;
             this.txtTenantFullName.Name = "txtTenantFullName";
             this.txtTenantFullName.ReadOnly = true;
-            this.txtTenantFullName.Size = new System.Drawing.Size(200, 21);
-            this.txtTenantFullName.TabIndex = 127;
+            this.txtTenantFullName.Size = new System.Drawing.Size(199, 20);
+            this.txtTenantFullName.TabIndex = 1;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(34, 84);
+            this.label17.Location = new System.Drawing.Point(36, 83);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(56, 13);
             this.label17.TabIndex = 133;
@@ -564,18 +563,17 @@
             // txtTenantCitizenshipId
             // 
             this.txtTenantCitizenshipId.BackColor = System.Drawing.Color.White;
-            this.txtTenantCitizenshipId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTenantCitizenshipId.Location = new System.Drawing.Point(101, 49);
+            this.txtTenantCitizenshipId.Location = new System.Drawing.Point(103, 49);
             this.txtTenantCitizenshipId.MaxLength = 11;
             this.txtTenantCitizenshipId.Name = "txtTenantCitizenshipId";
             this.txtTenantCitizenshipId.ReadOnly = true;
-            this.txtTenantCitizenshipId.Size = new System.Drawing.Size(200, 21);
-            this.txtTenantCitizenshipId.TabIndex = 126;
+            this.txtTenantCitizenshipId.Size = new System.Drawing.Size(199, 20);
+            this.txtTenantCitizenshipId.TabIndex = 0;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(19, 57);
+            this.label18.Location = new System.Drawing.Point(21, 57);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(71, 13);
             this.label18.TabIndex = 132;
@@ -584,17 +582,16 @@
             // txtLandlordIBAN
             // 
             this.txtLandlordIBAN.BackColor = System.Drawing.Color.White;
-            this.txtLandlordIBAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtLandlordIBAN.Location = new System.Drawing.Point(101, 425);
+            this.txtLandlordIBAN.Location = new System.Drawing.Point(103, 434);
             this.txtLandlordIBAN.Name = "txtLandlordIBAN";
             this.txtLandlordIBAN.ReadOnly = true;
-            this.txtLandlordIBAN.Size = new System.Drawing.Size(200, 21);
-            this.txtLandlordIBAN.TabIndex = 121;
+            this.txtLandlordIBAN.Size = new System.Drawing.Size(199, 20);
+            this.txtLandlordIBAN.TabIndex = 11;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(55, 433);
+            this.label16.Location = new System.Drawing.Point(57, 442);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(35, 13);
             this.label16.TabIndex = 124;
@@ -603,17 +600,16 @@
             // txtLandlordAccountNo
             // 
             this.txtLandlordAccountNo.BackColor = System.Drawing.Color.White;
-            this.txtLandlordAccountNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtLandlordAccountNo.Location = new System.Drawing.Point(101, 398);
+            this.txtLandlordAccountNo.Location = new System.Drawing.Point(103, 408);
             this.txtLandlordAccountNo.Name = "txtLandlordAccountNo";
             this.txtLandlordAccountNo.ReadOnly = true;
-            this.txtLandlordAccountNo.Size = new System.Drawing.Size(200, 21);
-            this.txtLandlordAccountNo.TabIndex = 120;
+            this.txtLandlordAccountNo.Size = new System.Drawing.Size(199, 20);
+            this.txtLandlordAccountNo.TabIndex = 10;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(32, 406);
+            this.label14.Location = new System.Drawing.Point(34, 416);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(58, 13);
             this.label14.TabIndex = 123;
@@ -622,37 +618,37 @@
             // txtLandlordBankAccountName
             // 
             this.txtLandlordBankAccountName.BackColor = System.Drawing.Color.White;
-            this.txtLandlordBankAccountName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtLandlordBankAccountName.Location = new System.Drawing.Point(101, 371);
+            this.txtLandlordBankAccountName.Location = new System.Drawing.Point(103, 382);
             this.txtLandlordBankAccountName.Name = "txtLandlordBankAccountName";
             this.txtLandlordBankAccountName.ReadOnly = true;
-            this.txtLandlordBankAccountName.Size = new System.Drawing.Size(200, 21);
-            this.txtLandlordBankAccountName.TabIndex = 119;
+            this.txtLandlordBankAccountName.Size = new System.Drawing.Size(199, 20);
+            this.txtLandlordBankAccountName.TabIndex = 9;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(31, 364);
+            this.label13.Location = new System.Drawing.Point(2, 390);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(59, 26);
+            this.label13.Size = new System.Drawing.Size(90, 13);
             this.label13.TabIndex = 122;
-            this.label13.Text = "Banka\r\nHesap Adı:";
+            this.label13.Text = "Banka HesapAdı:";
             // 
             // txtLandlordAddress
             // 
             this.txtLandlordAddress.BackColor = System.Drawing.Color.White;
-            this.txtLandlordAddress.Location = new System.Drawing.Point(101, 325);
+            this.txtLandlordAddress.Location = new System.Drawing.Point(103, 328);
+            this.txtLandlordAddress.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
             this.txtLandlordAddress.MaxLength = 500;
             this.txtLandlordAddress.Multiline = true;
             this.txtLandlordAddress.Name = "txtLandlordAddress";
             this.txtLandlordAddress.ReadOnly = true;
-            this.txtLandlordAddress.Size = new System.Drawing.Size(200, 40);
-            this.txtLandlordAddress.TabIndex = 117;
+            this.txtLandlordAddress.Size = new System.Drawing.Size(199, 40);
+            this.txtLandlordAddress.TabIndex = 8;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(35, 327);
+            this.label8.Location = new System.Drawing.Point(37, 330);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(55, 13);
             this.label8.TabIndex = 118;
@@ -661,7 +657,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(44, 306);
+            this.label5.Location = new System.Drawing.Point(46, 309);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 13);
             this.label5.TabIndex = 116;
@@ -670,18 +666,17 @@
             // txtLandlordFullName
             // 
             this.txtLandlordFullName.BackColor = System.Drawing.Color.White;
-            this.txtLandlordFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtLandlordFullName.Location = new System.Drawing.Point(101, 272);
+            this.txtLandlordFullName.Location = new System.Drawing.Point(103, 276);
             this.txtLandlordFullName.MaxLength = 50;
             this.txtLandlordFullName.Name = "txtLandlordFullName";
             this.txtLandlordFullName.ReadOnly = true;
-            this.txtLandlordFullName.Size = new System.Drawing.Size(200, 21);
-            this.txtLandlordFullName.TabIndex = 112;
+            this.txtLandlordFullName.Size = new System.Drawing.Size(199, 20);
+            this.txtLandlordFullName.TabIndex = 6;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(34, 280);
+            this.label6.Location = new System.Drawing.Point(36, 284);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 13);
             this.label6.TabIndex = 115;
@@ -690,18 +685,17 @@
             // txtLandlordCitizenshipId
             // 
             this.txtLandlordCitizenshipId.BackColor = System.Drawing.Color.White;
-            this.txtLandlordCitizenshipId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtLandlordCitizenshipId.Location = new System.Drawing.Point(101, 245);
+            this.txtLandlordCitizenshipId.Location = new System.Drawing.Point(103, 250);
             this.txtLandlordCitizenshipId.MaxLength = 11;
             this.txtLandlordCitizenshipId.Name = "txtLandlordCitizenshipId";
             this.txtLandlordCitizenshipId.ReadOnly = true;
-            this.txtLandlordCitizenshipId.Size = new System.Drawing.Size(200, 21);
-            this.txtLandlordCitizenshipId.TabIndex = 111;
+            this.txtLandlordCitizenshipId.Size = new System.Drawing.Size(199, 20);
+            this.txtLandlordCitizenshipId.TabIndex = 5;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 253);
+            this.label7.Location = new System.Drawing.Point(21, 258);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(71, 13);
             this.label7.TabIndex = 114;

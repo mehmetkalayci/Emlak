@@ -20,6 +20,7 @@ using System.Deployment.Application;
 using System.Data.Entity.SqlServer;
 using System.Data.Entity;
 using AutoUpdaterDotNET;
+using System.IO;
 
 namespace Emlak.UI
 {
@@ -112,7 +113,20 @@ namespace Emlak.UI
 
         private void veritabanınıYedekleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //FormHelper.ShowDialog<FrmBackupRestore>();
+            string backupFile = Application.StartupPath + "\\Backup.exe";
+            bool isBackupAvailable = File.Exists(backupFile);
+            if (isBackupAvailable )
+            {
+                if (MessageBox.Show("Yedekleme/geri yükleme işlemini başlatmak için program kapatılsın mı?", "Yedekle/Geri Yükle", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+                {
+                    Process.Start(backupFile);
+                    Application.Exit();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Yedekleme / geri yükleme dosyası silinmiş ya da hatalı/eksik kurulum!", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void yıllıkRaporToolStripMenuItem_Click(object sender, EventArgs e)

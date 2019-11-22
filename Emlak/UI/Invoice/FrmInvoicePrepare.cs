@@ -92,6 +92,8 @@ namespace Emlak.UI.Invoice
             parameters[9] = new ReportParameter("paramCompanyPhone", Properties.Settings.Default.CompanyPhone, true);
 
 
+            Properties.Settings.Default.DefaultInvoiceType = cmbInvoince.SelectedItem.ToString();
+            Properties.Settings.Default.Save();
 
             FrmInvoiceShow frmInvoiceShow = new FrmInvoiceShow();
             frmInvoiceShow.Parameters = parameters;
@@ -138,8 +140,8 @@ namespace Emlak.UI.Invoice
                 }
             }
 
-
-            cmbInvoince.SelectedIndex = 0;
+            cmbInvoince.SelectedItem = Properties.Settings.Default.DefaultInvoiceType;
+            //cmbInvoince.SelectedIndex = 0;
 
 
         }

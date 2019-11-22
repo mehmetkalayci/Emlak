@@ -548,6 +548,9 @@
     <Content Include="Arkaplan\6.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Backup.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Changelog.txt" />
     <Content Include="Model\ModelEmlak.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

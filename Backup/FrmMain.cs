@@ -43,16 +43,16 @@ namespace Backup
                         richTextBox1.Text += string.Format("{0} --> {1} kopyalandı...\n", file, targetFilePath);
                     }
                     richTextBox1.Text += "Yedekleme işlemi tamamlandı!\n";
-                    MessageBox.Show("Yedekleme işlemi tamamlandı!");
+                    MessageBox.Show("Yedekleme işlemi tamamlandı!", "Yedekle/Geri Yükle", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (FileNotFoundException ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -79,21 +79,22 @@ namespace Backup
                         if (ext == ".mdf" || ext == ".ldf")
                         {
                             string target = targetDataPath + Path.GetFileName(file);
-                            File.Copy(file, target);
+                            File.Copy(file, target,true);
                             richTextBox1.Text += string.Format("{0} --> {1} kopyalandı...\n", file, target);
                         }
                     }
                     richTextBox1.Text += "Geri yükleme işlemi tamamlandı!\n";
-                    MessageBox.Show("Geri yükleme işlemi tamamlandı!");
+                    MessageBox.Show("Geri yükleme işlemi tamamlandı!", "Yedekle/Geri Yükle", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 }
             }
             catch (FileNotFoundException ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
