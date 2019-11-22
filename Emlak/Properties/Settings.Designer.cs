@@ -130,5 +130,17 @@ namespace Emlak.Properties {
                 this["DefaultInvoiceType"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://telgrafla.com/emlakupdate/app.xml")]
+        public string UpdateURL {
+            get {
+                return ((string)(this["UpdateURL"]));
+            }
+            set {
+                this["UpdateURL"] = value;
+            }
+        }
     }
 }

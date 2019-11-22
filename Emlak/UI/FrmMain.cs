@@ -206,7 +206,7 @@ namespace Emlak.UI
 
         private void FrmMain_Shown(object sender, EventArgs e)
         {
-            AutoUpdater.Start("http://telgrafla.com/emlakupdate/app.xml");
+            AutoUpdater.Start(Properties.Settings.Default.UpdateURL);
 
             if (!Properties.Settings.Default.NoBackground && System.IO.File.Exists(Properties.Settings.Default.Background))
             {
