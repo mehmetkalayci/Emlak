@@ -413,6 +413,8 @@ C:\Users\hp\Desktop\Emlak\Emlak\bin\Debug\Arkaplan\3.jpg
 C:\Users\hp\Desktop\Emlak\Emlak\bin\Debug\Arkaplan\4.jpg
 C:\Users\hp\Desktop\Emlak\Emlak\bin\Debug\Arkaplan\5.jpg
 C:\Users\hp\Desktop\Emlak\Emlak\bin\Debug\Backup.exe
+C:\Users\hp\Desktop\Emlak\Emlak\bin\Debug\Data\Emlak.mdf
+C:\Users\hp\Desktop\Emlak\Emlak\bin\Debug\Data\Emlak_log.ldf
 C:\Users\hp\Desktop\Emlak\Emlak\bin\Debug\Emlak.exe.config
 C:\Users\hp\Desktop\Emlak\Emlak\bin\Debug\Emlak.exe
 C:\Users\hp\Desktop\Emlak\Emlak\bin\Debug\Emlak.pdb
