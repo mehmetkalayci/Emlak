@@ -49,7 +49,7 @@ namespace Emlak.Model
         public string Explanation { get; set; }
         public int FileNumber { get; set; }
         public string RealtyDefinition { get; set; }
-        public bool IsActive { get; set; }
+        public System.DateTime CancellationDate { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ContractParties> ContractParties { get; set; }

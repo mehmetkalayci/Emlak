@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="EmlakModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CashBook">
           <Key>
             <PropertyRef Name="TransactionId" />
@@ -55,7 +55,7 @@
           <Property Name="Explanation" Type="nvarchar" MaxLength="500" />
           <Property Name="FileNumber" Type="int" Nullable="false" />
           <Property Name="RealtyDefinition" Type="nvarchar" MaxLength="250" Nullable="false" />
-          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CancellationDate" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="ContractParties">
           <Key>
@@ -172,7 +172,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Debt_Contract">
-          <End Role="Contract" Type="Self.Contract" Multiplicity="1" />
+          <End Role="Contract" Type="Self.Contract" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Debt" Type="Self.Debt" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Contract">
@@ -221,7 +223,7 @@
         <Function Name="sp_getYearlyReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="Year" Type="int" Mode="In" />
         </Function>
-        <EntityContainer Name="EmlakModelStoreContainer">
+        <EntityContainer Name="ModelStoreContainer">
           <EntitySet Name="CashBook" EntityType="Self.CashBook" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Contract" EntityType="Self.Contract" Schema="dbo" store:Type="Tables" />
@@ -257,10 +259,11 @@
             <End Role="Town" EntitySet="Town" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="EmlakModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="CashBook">
           <Key>
             <PropertyRef Name="TransactionId" />
@@ -313,9 +316,9 @@
           <Property Name="Explanation" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="FileNumber" Type="Int32" Nullable="false" />
           <Property Name="RealtyDefinition" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CancellationDate" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="ContractParties" Relationship="Self.FK_ContractParties_Contract" FromRole="Contract" ToRole="ContractParties" />
           <NavigationProperty Name="Debt" Relationship="Self.FK_Debt_Contract" FromRole="Contract" ToRole="Debt" />
-          <Property Name="IsActive" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="ContractParties">
           <Key>
@@ -337,13 +340,13 @@
           <Property Name="Amount" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="DueDate" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="PaymentDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="PaymentDateToLandlord" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="PaymentType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsPaidByTenant" Type="Boolean" Nullable="false" />
           <Property Name="Explanation" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="ContractId" Type="Int32" Nullable="false" />
           <Property Name="IsPaidToLandlord" Type="Boolean" Nullable="false" />
           <Property Name="IsCommission" Type="Boolean" Nullable="false" />
+          <Property Name="PaymentDateToLandlord" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="CashBook" Relationship="Self.FK_CashBook_Debt" FromRole="Debt" ToRole="CashBook" />
           <NavigationProperty Name="Contract" Relationship="Self.FK_Debt_Contract" FromRole="Debt" ToRole="Contract" />
         </EntityType>
@@ -354,9 +357,9 @@
           <Property Name="PersonId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CitizenshipId" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
           <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Explanation" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="Phone1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Phone2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Explanation" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="ContractParties" Relationship="Self.FK_ContractParties_Person" FromRole="Person" ToRole="ContractParties" />
         </EntityType>
         <EntityType Name="Realty">
@@ -512,20 +515,20 @@
             <End Role="RealtyType" EntitySet="RealtyType" />
             <End Role="Realty" EntitySet="Realty" />
           </AssociationSet>
-          <FunctionImport Name="sp_getContracts" ReturnType="Collection(EmlakModel.sp_getContracts_Result)" />
-          <FunctionImport Name="sp_getDebtDetails" ReturnType="Collection(EmlakModel.sp_getDebtDetails_Result)">
-          <Parameter Name="DebtId" Mode="In" Type="Int32" />
+          <FunctionImport Name="sp_getContracts" ReturnType="Collection(Model.sp_getContracts_Result)" />
+          <FunctionImport Name="sp_getDebtDetails" ReturnType="Collection(Model.sp_getDebtDetails_Result)">
+            <Parameter Name="DebtId" Mode="In" Type="Int32" />
           </FunctionImport>
-          <FunctionImport Name="sp_getExpiredContracts" ReturnType="Collection(EmlakModel.sp_getExpiredContracts_Result)" />
-          <FunctionImport Name="sp_getMonthlyRentalReport" ReturnType="Collection(EmlakModel.sp_getMonthlyRentalReport_Result)" />
-          <FunctionImport Name="sp_getMonthlyReport" ReturnType="Collection(EmlakModel.sp_getMonthlyReport_Result)">
+          <FunctionImport Name="sp_getDebtsToLandlord" ReturnType="Collection(Model.sp_getDebtsToLandlord_Result)" />
+          <FunctionImport Name="sp_getExpiredContracts" ReturnType="Collection(Model.sp_getExpiredContracts_Result)" />
+          <FunctionImport Name="sp_getMonthlyRentalReport" ReturnType="Collection(Model.sp_getMonthlyRentalReport_Result)" />
+          <FunctionImport Name="sp_getMonthlyReport" ReturnType="Collection(Model.sp_getMonthlyReport_Result)">
             <Parameter Name="Month" Mode="In" Type="Int32" />
             <Parameter Name="Year" Mode="In" Type="Int32" />
           </FunctionImport>
-          <FunctionImport Name="sp_getYearlyReport" ReturnType="Collection(EmlakModel.sp_getYearlyReport_Result)">
-          <Parameter Name="Year" Mode="In" Type="Int32" />
+          <FunctionImport Name="sp_getYearlyReport" ReturnType="Collection(Model.sp_getYearlyReport_Result)">
+            <Parameter Name="Year" Mode="In" Type="Int32" />
           </FunctionImport>
-          <FunctionImport Name="sp_getDebtsToLandlord" ReturnType="Collection(EmlakModel.sp_getDebtsToLandlord_Result)" />
         </EntityContainer>
         <ComplexType Name="sp_getContracts_Result">
           <Property Type="Int32" Name="ContractId" Nullable="false" />
@@ -556,6 +559,20 @@
           <Property Type="Boolean" Name="IsPaidByTenant" Nullable="false" />
           <Property Type="Boolean" Name="IsPaidToLandlord" Nullable="false" />
           <Property Type="Boolean" Name="IsCommission" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="sp_getDebtsToLandlord_Result">
+          <Property Type="Int32" Name="DebtId" Nullable="false" />
+          <Property Type="Int32" Name="FileNumber" Nullable="false" />
+          <Property Type="Boolean" Name="IsPaidToLandlord" Nullable="false" />
+          <Property Type="DateTime" Name="DueDate" Nullable="false" />
+          <Property Type="String" Name="PaymentDate" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Kiracilar" Nullable="true" />
+          <Property Type="String" Name="LandlordFullName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="RealtyDefinition" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Definition" Nullable="false" MaxLength="100" />
+          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" />
+          <Property Type="String" Name="Explanation" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="EndingDate" Nullable="false" />
         </ComplexType>
         <ComplexType Name="sp_getExpiredContracts_Result">
           <Property Type="Int32" Name="ContractId" Nullable="false" />
@@ -608,28 +625,14 @@
           <Property Type="String" Name="Explanation" Nullable="true" MaxLength="500" />
           <Property Type="DateTime" Name="EndingDate" Nullable="false" />
         </ComplexType>
-        <ComplexType Name="sp_getDebtsToLandlord_Result">
-          <Property Type="Int32" Name="DebtId" Nullable="false" />
-          <Property Type="Int32" Name="FileNumber" Nullable="false" />
-          <Property Type="Boolean" Name="IsPaidToLandlord" Nullable="false" />
-          <Property Type="DateTime" Name="DueDate" Nullable="false" />
-          <Property Type="String" Name="PaymentDate" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="Kiracilar" Nullable="true" />
-          <Property Type="String" Name="LandlordFullName" Nullable="false" MaxLength="50" />
-          <Property Type="String" Name="RealtyDefinition" Nullable="false" MaxLength="250" />
-          <Property Type="String" Name="Definition" Nullable="false" MaxLength="100" />
-          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" />
-          <Property Type="String" Name="Explanation" Nullable="true" MaxLength="500" />
-          <Property Type="DateTime" Name="EndingDate" Nullable="false" />
-        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="EmlakModelStoreContainer" CdmEntityContainer="EmlakEntities">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="EmlakEntities">
           <EntitySetMapping Name="CashBook">
-            <EntityTypeMapping TypeName="EmlakModel.CashBook">
+            <EntityTypeMapping TypeName="Model.CashBook">
               <MappingFragment StoreEntitySet="CashBook">
                 <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
                 <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
@@ -641,7 +644,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="City">
-            <EntityTypeMapping TypeName="EmlakModel.City">
+            <EntityTypeMapping TypeName="Model.City">
               <MappingFragment StoreEntitySet="City">
                 <ScalarProperty Name="CityId" ColumnName="CityId" />
                 <ScalarProperty Name="CityName" ColumnName="CityName" />
@@ -649,9 +652,8 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Contract">
-            <EntityTypeMapping TypeName="EmlakModel.Contract">
+            <EntityTypeMapping TypeName="Model.Contract">
               <MappingFragment StoreEntitySet="Contract">
-                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
                 <ScalarProperty Name="ContractId" ColumnName="ContractId" />
                 <ScalarProperty Name="StartingDate" ColumnName="StartingDate" />
                 <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
@@ -680,11 +682,12 @@
                 <ScalarProperty Name="Explanation" ColumnName="Explanation" />
                 <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
                 <ScalarProperty Name="RealtyDefinition" ColumnName="RealtyDefinition" />
+                <ScalarProperty Name="CancellationDate" ColumnName="CancellationDate" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ContractParties">
-            <EntityTypeMapping TypeName="EmlakModel.ContractParties">
+            <EntityTypeMapping TypeName="Model.ContractParties">
               <MappingFragment StoreEntitySet="ContractParties">
                 <ScalarProperty Name="ContractId" ColumnName="ContractId" />
                 <ScalarProperty Name="PersonId" ColumnName="PersonId" />
@@ -693,37 +696,37 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Debt">
-            <EntityTypeMapping TypeName="EmlakModel.Debt">
+            <EntityTypeMapping TypeName="Model.Debt">
               <MappingFragment StoreEntitySet="Debt">
                 <ScalarProperty Name="DebtId" ColumnName="DebtId" />
                 <ScalarProperty Name="Definition" ColumnName="Definition" />
                 <ScalarProperty Name="Amount" ColumnName="Amount" />
                 <ScalarProperty Name="DueDate" ColumnName="DueDate" />
                 <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
-                <ScalarProperty Name="PaymentDateToLandlord" ColumnName="PaymentDateToLandlord" />
                 <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
                 <ScalarProperty Name="IsPaidByTenant" ColumnName="IsPaidByTenant" />
                 <ScalarProperty Name="Explanation" ColumnName="Explanation" />
                 <ScalarProperty Name="ContractId" ColumnName="ContractId" />
                 <ScalarProperty Name="IsPaidToLandlord" ColumnName="IsPaidToLandlord" />
                 <ScalarProperty Name="IsCommission" ColumnName="IsCommission" />
+                <ScalarProperty Name="PaymentDateToLandlord" ColumnName="PaymentDateToLandlord" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Person">
-            <EntityTypeMapping TypeName="EmlakModel.Person">
+            <EntityTypeMapping TypeName="Model.Person">
               <MappingFragment StoreEntitySet="Person">
                 <ScalarProperty Name="PersonId" ColumnName="PersonId" />
                 <ScalarProperty Name="CitizenshipId" ColumnName="CitizenshipId" />
                 <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
                 <ScalarProperty Name="Phone1" ColumnName="Phone1" />
                 <ScalarProperty Name="Phone2" ColumnName="Phone2" />
-                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Realty">
-            <EntityTypeMapping TypeName="EmlakModel.Realty">
+            <EntityTypeMapping TypeName="Model.Realty">
               <MappingFragment StoreEntitySet="Realty">
                 <ScalarProperty Name="RealtyId" ColumnName="RealtyId" />
                 <ScalarProperty Name="Definition" ColumnName="Definition" />
@@ -738,7 +741,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="RealtyType">
-            <EntityTypeMapping TypeName="EmlakModel.RealtyType">
+            <EntityTypeMapping TypeName="Model.RealtyType">
               <MappingFragment StoreEntitySet="RealtyType">
                 <ScalarProperty Name="RealtyTypeId" ColumnName="RealtyTypeId" />
                 <ScalarProperty Name="RealtyTypeName" ColumnName="RealtyTypeName" />
@@ -746,7 +749,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Town">
-            <EntityTypeMapping TypeName="EmlakModel.Town">
+            <EntityTypeMapping TypeName="Model.Town">
               <MappingFragment StoreEntitySet="Town">
                 <ScalarProperty Name="TownId" ColumnName="TownId" />
                 <ScalarProperty Name="TownName" ColumnName="TownName" />
@@ -755,7 +758,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="User">
-            <EntityTypeMapping TypeName="EmlakModel.User">
+            <EntityTypeMapping TypeName="Model.User">
               <MappingFragment StoreEntitySet="User">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Username" ColumnName="Username" />
@@ -763,9 +766,9 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <FunctionImportMapping FunctionImportName="sp_getContracts" FunctionName="EmlakModel.Store.sp_getContracts">
+          <FunctionImportMapping FunctionImportName="sp_getContracts" FunctionName="Model.Store.sp_getContracts">
             <ResultMapping>
-              <ComplexTypeMapping TypeName="EmlakModel.sp_getContracts_Result">
+              <ComplexTypeMapping TypeName="Model.sp_getContracts_Result">
                 <ScalarProperty Name="ContractId" ColumnName="ContractId" />
                 <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
                 <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
@@ -780,9 +783,9 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="sp_getDebtDetails" FunctionName="EmlakModel.Store.sp_getDebtDetails">
+          <FunctionImportMapping FunctionImportName="sp_getDebtDetails" FunctionName="Model.Store.sp_getDebtDetails">
             <ResultMapping>
-              <ComplexTypeMapping TypeName="EmlakModel.sp_getDebtDetails_Result">
+              <ComplexTypeMapping TypeName="Model.sp_getDebtDetails_Result">
                 <ScalarProperty Name="DebtId" ColumnName="DebtId" />
                 <ScalarProperty Name="Definition" ColumnName="Definition" />
                 <ScalarProperty Name="Amount" ColumnName="Amount" />
@@ -801,9 +804,27 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="sp_getExpiredContracts" FunctionName="EmlakModel.Store.sp_getExpiredContracts">
+          <FunctionImportMapping FunctionImportName="sp_getDebtsToLandlord" FunctionName="Model.Store.sp_getDebtsToLandlord">
             <ResultMapping>
-              <ComplexTypeMapping TypeName="EmlakModel.sp_getExpiredContracts_Result">
+              <ComplexTypeMapping TypeName="Model.sp_getDebtsToLandlord_Result">
+                <ScalarProperty Name="DebtId" ColumnName="DebtId" />
+                <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
+                <ScalarProperty Name="IsPaidToLandlord" ColumnName="IsPaidToLandlord" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+                <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
+                <ScalarProperty Name="LandlordFullName" ColumnName="LandlordFullName" />
+                <ScalarProperty Name="RealtyDefinition" ColumnName="RealtyDefinition" />
+                <ScalarProperty Name="Definition" ColumnName="Definition" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+                <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_getExpiredContracts" FunctionName="Model.Store.sp_getExpiredContracts">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Model.sp_getExpiredContracts_Result">
                 <ScalarProperty Name="ContractId" ColumnName="ContractId" />
                 <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
                 <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
@@ -818,9 +839,9 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="sp_getMonthlyRentalReport" FunctionName="EmlakModel.Store.sp_getMonthlyRentalReport">
+          <FunctionImportMapping FunctionImportName="sp_getMonthlyRentalReport" FunctionName="Model.Store.sp_getMonthlyRentalReport">
             <ResultMapping>
-              <ComplexTypeMapping TypeName="EmlakModel.sp_getMonthlyRentalReport_Result">
+              <ComplexTypeMapping TypeName="Model.sp_getMonthlyRentalReport_Result">
                 <ScalarProperty Name="DebtId" ColumnName="DebtId" />
                 <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
                 <ScalarProperty Name="IsCommission" ColumnName="IsCommission" />
@@ -834,9 +855,9 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="sp_getMonthlyReport" FunctionName="EmlakModel.Store.sp_getMonthlyReport">
+          <FunctionImportMapping FunctionImportName="sp_getMonthlyReport" FunctionName="Model.Store.sp_getMonthlyReport">
             <ResultMapping>
-              <ComplexTypeMapping TypeName="EmlakModel.sp_getMonthlyReport_Result">
+              <ComplexTypeMapping TypeName="Model.sp_getMonthlyReport_Result">
                 <ScalarProperty Name="DebtId" ColumnName="DebtId" />
                 <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
                 <ScalarProperty Name="IsPaidByTenant" ColumnName="IsPaidByTenant" />
@@ -851,33 +872,15 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="sp_getYearlyReport" FunctionName="EmlakModel.Store.sp_getYearlyReport">
+          <FunctionImportMapping FunctionImportName="sp_getYearlyReport" FunctionName="Model.Store.sp_getYearlyReport">
             <ResultMapping>
-              <ComplexTypeMapping TypeName="EmlakModel.sp_getYearlyReport_Result">
+              <ComplexTypeMapping TypeName="Model.sp_getYearlyReport_Result">
                 <ScalarProperty Name="DebtId" ColumnName="DebtId" />
                 <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
                 <ScalarProperty Name="IsPaidByTenant" ColumnName="IsPaidByTenant" />
                 <ScalarProperty Name="DueDate" ColumnName="DueDate" />
                 <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
                 <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
-                <ScalarProperty Name="RealtyDefinition" ColumnName="RealtyDefinition" />
-                <ScalarProperty Name="Definition" ColumnName="Definition" />
-                <ScalarProperty Name="Amount" ColumnName="Amount" />
-                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
-                <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="sp_getDebtsToLandlord" FunctionName="EmlakModel.Store.sp_getDebtsToLandlord">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="EmlakModel.sp_getDebtsToLandlord_Result">
-                <ScalarProperty Name="DebtId" ColumnName="DebtId" />
-                <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
-                <ScalarProperty Name="IsPaidToLandlord" ColumnName="IsPaidToLandlord" />
-                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
-                <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
-                <ScalarProperty Name="Kiracilar" ColumnName="Kiracilar" />
-                <ScalarProperty Name="LandlordFullName" ColumnName="LandlordFullName" />
                 <ScalarProperty Name="RealtyDefinition" ColumnName="RealtyDefinition" />
                 <ScalarProperty Name="Definition" ColumnName="Definition" />
                 <ScalarProperty Name="Amount" ColumnName="Amount" />

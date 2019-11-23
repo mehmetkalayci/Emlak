@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Hatice\Desktop\EMLAK PROJE\ArsevEmlak\Emlak\Model\ModelEmlak.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\hp\Desktop\Emlak\Emlak\Model\ModelEmlak.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

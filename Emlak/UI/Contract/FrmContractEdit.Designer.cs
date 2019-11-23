@@ -104,6 +104,7 @@
             this.txtNeighborhood = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtApartment = new System.Windows.Forms.TextBox();
+            this.lblReason = new System.Windows.Forms.Label();
             this.page2TarafBilgileri.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgParties)).BeginInit();
             this.page3Diger.SuspendLayout();
@@ -970,11 +971,23 @@
             this.txtApartment.Size = new System.Drawing.Size(300, 20);
             this.txtApartment.TabIndex = 4;
             // 
+            // lblReason
+            // 
+            this.lblReason.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblReason.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblReason.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblReason.Location = new System.Drawing.Point(468, 0);
+            this.lblReason.Name = "lblReason";
+            this.lblReason.Size = new System.Drawing.Size(316, 26);
+            this.lblReason.TabIndex = 1;
+            this.lblReason.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FrmContractEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 541);
+            this.Controls.Add(this.lblReason);
             this.Controls.Add(this.tab);
             this.Name = "FrmContractEdit";
             this.Text = "Sözleşme Düzenle";
@@ -1073,5 +1086,6 @@
         private System.Windows.Forms.TextBox txtFileNumber;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox txtRealtyDefinition;
+        private System.Windows.Forms.Label lblReason;
     }
 }

@@ -23,9 +23,9 @@ namespace Emlak.Model
         public int PersonId { get; set; }
         public string CitizenshipId { get; set; }
         public string FullName { get; set; }
+        public string Explanation { get; set; }
         public string Phone1 { get; set; }
         public string Phone2 { get; set; }
-        public string Explanation { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ContractParties> ContractParties { get; set; }

@@ -52,6 +52,11 @@ namespace Emlak.Model
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_getDebtDetails_Result>("sp_getDebtDetails", debtIdParameter);
         }
     
+        public virtual ObjectResult<sp_getDebtsToLandlord_Result> sp_getDebtsToLandlord()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_getDebtsToLandlord_Result>("sp_getDebtsToLandlord");
+        }
+    
         public virtual ObjectResult<sp_getExpiredContracts_Result> sp_getExpiredContracts()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_getExpiredContracts_Result>("sp_getExpiredContracts");
@@ -82,11 +87,6 @@ namespace Emlak.Model
                 new ObjectParameter("Year", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_getYearlyReport_Result>("sp_getYearlyReport", yearParameter);
-        }
-    
-        public virtual ObjectResult<sp_getDebtsToLandlord_Result> sp_getDebtsToLandlord()
-        {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_getDebtsToLandlord_Result>("sp_getDebtsToLandlord");
         }
     }
 }

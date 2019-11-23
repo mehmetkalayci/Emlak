@@ -25,13 +25,13 @@ namespace Emlak.Model
         public decimal Amount { get; set; }
         public System.DateTime DueDate { get; set; }
         public string PaymentDate { get; set; }
-        public string PaymentDateToLandlord { get; set; }
         public string PaymentType { get; set; }
         public bool IsPaidByTenant { get; set; }
         public string Explanation { get; set; }
         public int ContractId { get; set; }
         public bool IsPaidToLandlord { get; set; }
         public bool IsCommission { get; set; }
+        public string PaymentDateToLandlord { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CashBook> CashBook { get; set; }

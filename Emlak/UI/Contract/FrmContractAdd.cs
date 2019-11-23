@@ -164,7 +164,7 @@ namespace Emlak.UI.Contract
 
             contract.FileNumber = int.Parse(txtFileNumber.Text);
             contract.StartingDate = dtStartingDate.Value;
-            contract.EndingDate = dtEndingDate.Value;
+            contract.CancellationDate = contract.EndingDate = dtEndingDate.Value;// cancel date, enddate eşit
             contract.Tenancy = txtTenancy.Text;
             contract.Neighborhood = txtNeighborhood.Text;
             contract.Street = txtStreet.Text;
@@ -192,7 +192,6 @@ namespace Emlak.UI.Contract
 
             contract.ContractSpecialConditions = txtSpecialConditions.Text;
             contract.Explanation = txtExplanation.Text;
-            contract.IsActive = true;
 
             // Tarafları Ekle
             for (int i = 0; i < dgParties.Rows.Count; i++)

@@ -241,12 +241,8 @@ namespace Emlak.UI.Contract
                 int contractId = int.Parse(dgContracts.SelectedRows[0].Cells[0].Value.ToString());
 
                 Model.Contract contract = db.Contract.Where(q => q.ContractId == contractId).FirstOrDefault();
-                contract.IsActive = false;
 
-
-                var silinecekler = db.Debt.Where(q => q.ContractId == contract.ContractId && q.DueDate> DbFunctions.TruncateTime(DateTime.Now)).ToList();
-
-
+                contract.CancellationDate = DateTime.Now;
 
                 int num = db.SaveChanges();
 

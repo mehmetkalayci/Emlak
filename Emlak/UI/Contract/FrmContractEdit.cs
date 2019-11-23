@@ -191,6 +191,16 @@ namespace Emlak.UI.Contract
             txtSpecialConditions.Text = selectedContract.ContractSpecialConditions;
             txtExplanation.Text = selectedContract.Explanation;
 
+            //if (selectedContract.EndingDate <= DateTime.Now.AddMonths(1) || selectedContract.CancellationDate <= DateTime.Now)
+            if (selectedContract.EndingDate != selectedContract.CancellationDate && selectedContract.CancellationDate <= DateTime.Now)
+            {
+                lblReason.Text =  selectedContract.CancellationDate.ToShortDateString() + " tarihinde iptal edildi!";
+            }
+            else if (selectedContract.EndingDate <= DateTime.Now.AddMonths(1))
+            {
+                lblReason.Text =  selectedContract.CancellationDate.ToShortDateString() + " tarihinde bitti!";
+            }
+
             LoadContractParties();
             LoadRentals();
             LoadDebts();

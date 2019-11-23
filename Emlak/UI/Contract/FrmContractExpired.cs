@@ -211,12 +211,16 @@ namespace Emlak.UI.Contract
                 return;
             }
 
+
             if (dgExpiredContracts.SelectedRows.Count > 0)
             {
                 int contractId = int.Parse(dgExpiredContracts.SelectedRows[0].Cells[0].Value.ToString());
 
                 Model.Contract contract = db.Contract.Where(q => q.ContractId == contractId).FirstOrDefault();
-                contract.IsActive = true;
+
+                contract.CancellationDate = contract.EndingDate;
+
+                db.Entry(contract).State = System.Data.Entity.EntityState.Modified;
 
                 int num = db.SaveChanges();
 

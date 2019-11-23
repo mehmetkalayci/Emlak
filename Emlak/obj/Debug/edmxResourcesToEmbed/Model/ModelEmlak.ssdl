@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="EmlakModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="CashBook">
     <Key>
       <PropertyRef Name="TransactionId" />
@@ -50,7 +50,7 @@
     <Property Name="Explanation" Type="nvarchar" MaxLength="500" />
     <Property Name="FileNumber" Type="int" Nullable="false" />
     <Property Name="RealtyDefinition" Type="nvarchar" MaxLength="250" Nullable="false" />
-    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CancellationDate" Type="datetime" Nullable="false" />
   </EntityType>
   <EntityType Name="ContractParties">
     <Key>
@@ -167,7 +167,9 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Debt_Contract">
-    <End Role="Contract" Type="Self.Contract" Multiplicity="1" />
+    <End Role="Contract" Type="Self.Contract" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Debt" Type="Self.Debt" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Contract">
@@ -216,7 +218,7 @@
   <Function Name="sp_getYearlyReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="Year" Type="int" Mode="In" />
   </Function>
-  <EntityContainer Name="EmlakModelStoreContainer">
+  <EntityContainer Name="ModelStoreContainer">
     <EntitySet Name="CashBook" EntityType="Self.CashBook" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Contract" EntityType="Self.Contract" Schema="dbo" store:Type="Tables" />
