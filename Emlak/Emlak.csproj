@@ -242,6 +242,12 @@
     <Compile Include="UI\Contract\FrmContractAdd.Designer.cs">
       <DependentUpon>FrmContractAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Contract\FrmContractCancelDateSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Contract\FrmContractCancelDateSelect.Designer.cs">
+      <DependentUpon>FrmContractCancelDateSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Contract\FrmContractEdit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -411,6 +417,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Contract\FrmContractAdd.resx">
       <DependentUpon>FrmContractAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Contract\FrmContractCancelDateSelect.resx">
+      <DependentUpon>FrmContractCancelDateSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Contract\FrmContractEdit.resx">
       <DependentUpon>FrmContractEdit.cs</DependentUpon>

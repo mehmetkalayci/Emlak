@@ -238,11 +238,22 @@ namespace Emlak.UI.Contract
 
             if (dgContracts.SelectedRows.Count > 0)
             {
+                FrmContractCancelDateSelect frmContractCancelDateSelect = new FrmContractCancelDateSelect();
+                frmContractCancelDateSelect.ShowDialog();
+
+                if (frmContractCancelDateSelect.IsCancel)
+                {
+                    MessageBox.Show("İşlem iptal edildi!");
+                    return;
+                }
+
+                DateTime cancelDatetimeDate = frmContractCancelDateSelect.CancelDate;
+
                 int contractId = int.Parse(dgContracts.SelectedRows[0].Cells[0].Value.ToString());
 
                 Model.Contract contract = db.Contract.Where(q => q.ContractId == contractId).FirstOrDefault();
 
-                contract.CancellationDate = DateTime.Now;
+                contract.CancellationDate = cancelDatetimeDate;
 
                 int num = db.SaveChanges();
 
