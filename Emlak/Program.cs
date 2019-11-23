@@ -29,7 +29,7 @@ namespace Emlak
             Application.Run(frmLogin);
 
 
-            if (frmLogin.IsLoggedin=true)
+            if (frmLogin.IsLoggedin)
             {
                 Application.Run(new FrmMain());
             }
