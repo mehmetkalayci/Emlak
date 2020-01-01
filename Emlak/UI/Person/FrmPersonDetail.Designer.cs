@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.txtLandlordPhone = new System.Windows.Forms.MaskedTextBox();
@@ -88,10 +87,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dgRentals = new System.Windows.Forms.DataGridView();
-            this.cntmInstalment = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.taksidiÖdeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stsInstalment = new System.Windows.Forms.StatusStrip();
             this.lblRentalsTotalRecord = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -102,7 +97,6 @@
             this.tabPage1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgRentals)).BeginInit();
-            this.cntmInstalment.SuspendLayout();
             this.stsInstalment.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgDebts)).BeginInit();
@@ -722,7 +716,6 @@
             this.dgRentals.BackgroundColor = System.Drawing.Color.White;
             this.dgRentals.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgRentals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgRentals.ContextMenuStrip = this.cntmInstalment;
             this.dgRentals.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgRentals.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgRentals.Location = new System.Drawing.Point(0, 0);
@@ -736,33 +729,6 @@
             this.dgRentals.TabIndex = 3;
             this.dgRentals.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgRentals_CellDoubleClick);
             this.dgRentals.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgRentals_CellFormatting);
-            // 
-            // cntmInstalment
-            // 
-            this.cntmInstalment.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.düzenleToolStripMenuItem,
-            this.silToolStripMenuItem,
-            this.taksidiÖdeToolStripMenuItem});
-            this.cntmInstalment.Name = "cntmInstalment";
-            this.cntmInstalment.Size = new System.Drawing.Size(135, 70);
-            // 
-            // düzenleToolStripMenuItem
-            // 
-            this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
-            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.düzenleToolStripMenuItem.Text = "Düzenle";
-            // 
-            // silToolStripMenuItem
-            // 
-            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
-            this.silToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.silToolStripMenuItem.Text = "Sil";
-            // 
-            // taksidiÖdeToolStripMenuItem
-            // 
-            this.taksidiÖdeToolStripMenuItem.Name = "taksidiÖdeToolStripMenuItem";
-            this.taksidiÖdeToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.taksidiÖdeToolStripMenuItem.Text = "Taksidi Öde";
             // 
             // stsInstalment
             // 
@@ -803,7 +769,6 @@
             this.dgDebts.BackgroundColor = System.Drawing.Color.White;
             this.dgDebts.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgDebts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgDebts.ContextMenuStrip = this.cntmInstalment;
             this.dgDebts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgDebts.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgDebts.Location = new System.Drawing.Point(0, 0);
@@ -854,7 +819,6 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgRentals)).EndInit();
-            this.cntmInstalment.ResumeLayout(false);
             this.stsInstalment.ResumeLayout(false);
             this.stsInstalment.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -871,10 +835,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.DataGridView dgRentals;
-        private System.Windows.Forms.ContextMenuStrip cntmInstalment;
-        private System.Windows.Forms.ToolStripMenuItem düzenleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem taksidiÖdeToolStripMenuItem;
         private System.Windows.Forms.StatusStrip stsInstalment;
         private System.Windows.Forms.ToolStripStatusLabel lblRentalsTotalRecord;
         private System.Windows.Forms.Label label29;

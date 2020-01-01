@@ -39,7 +39,9 @@
             this.txtFileNumber = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnFilter = new System.Windows.Forms.Button();
+            this.txtContractDefinition = new System.Windows.Forms.TextBox();
             this.txtPartyName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dtMonth = new System.Windows.Forms.DateTimePicker();
@@ -129,7 +131,9 @@
             this.groupBox4.Controls.Add(this.txtFileNumber);
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Controls.Add(this.btnFilter);
+            this.groupBox4.Controls.Add(this.txtContractDefinition);
             this.groupBox4.Controls.Add(this.txtPartyName);
+            this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.dtMonth);
@@ -148,7 +152,7 @@
             this.txtFileNumber.Location = new System.Drawing.Point(12, 66);
             this.txtFileNumber.Name = "txtFileNumber";
             this.txtFileNumber.Size = new System.Drawing.Size(150, 20);
-            this.txtFileNumber.TabIndex = 1;
+            this.txtFileNumber.TabIndex = 2;
             this.txtFileNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownFilter);
             // 
             // label1
@@ -157,19 +161,29 @@
             this.label1.Location = new System.Drawing.Point(10, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 13);
-            this.label1.TabIndex = 35;
+            this.label1.TabIndex = 1;
             this.label1.Text = "Dosya No";
             // 
             // btnFilter
             // 
             this.btnFilter.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFilter.Location = new System.Drawing.Point(12, 136);
+            this.btnFilter.Location = new System.Drawing.Point(12, 180);
             this.btnFilter.Name = "btnFilter";
             this.btnFilter.Size = new System.Drawing.Size(150, 23);
-            this.btnFilter.TabIndex = 3;
+            this.btnFilter.TabIndex = 7;
             this.btnFilter.Text = "Filtrele";
             this.btnFilter.UseVisualStyleBackColor = true;
             this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
+            // 
+            // txtContractDefinition
+            // 
+            this.txtContractDefinition.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtContractDefinition.Location = new System.Drawing.Point(12, 154);
+            this.txtContractDefinition.MaxLength = 25;
+            this.txtContractDefinition.Name = "txtContractDefinition";
+            this.txtContractDefinition.Size = new System.Drawing.Size(150, 20);
+            this.txtContractDefinition.TabIndex = 6;
+            this.txtContractDefinition.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownFilter);
             // 
             // txtPartyName
             // 
@@ -178,8 +192,17 @@
             this.txtPartyName.MaxLength = 25;
             this.txtPartyName.Name = "txtPartyName";
             this.txtPartyName.Size = new System.Drawing.Size(150, 20);
-            this.txtPartyName.TabIndex = 2;
+            this.txtPartyName.TabIndex = 4;
             this.txtPartyName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownFilter);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 138);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Sözleşme Tanım";
             // 
             // label3
             // 
@@ -187,7 +210,7 @@
             this.label3.Location = new System.Drawing.Point(9, 94);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 13);
-            this.label3.TabIndex = 17;
+            this.label3.TabIndex = 3;
             this.label3.Text = "Kiracı";
             // 
             // label7
@@ -199,7 +222,7 @@
             this.label7.Name = "label7";
             this.label7.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.label7.Size = new System.Drawing.Size(150, 20);
-            this.label7.TabIndex = 15;
+            this.label7.TabIndex = 10;
             this.label7.Text = "Yaklaşan Borçlar";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -221,7 +244,7 @@
             this.label6.Name = "label6";
             this.label6.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.label6.Size = new System.Drawing.Size(150, 20);
-            this.label6.TabIndex = 10;
+            this.label6.TabIndex = 9;
             this.label6.Text = "Ödendi";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -234,7 +257,7 @@
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.label4.Size = new System.Drawing.Size(150, 20);
-            this.label4.TabIndex = 10;
+            this.label4.TabIndex = 8;
             this.label4.Text = "Ödenmedi";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -280,5 +303,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtFileNumber;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtContractDefinition;
+        private System.Windows.Forms.Label label2;
     }
 }

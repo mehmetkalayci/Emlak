@@ -40,7 +40,10 @@ namespace Emlak.UI.Upcoming
             {
                 debts = debts.Where(q => q.LandlordFullName != null && q.LandlordFullName.ToLower().Contains(txtLandlord.Text.ToLower()));
             }
-
+            if (txtContractDefinition.Text.Trim().Length > 0)
+            {
+                debts = debts.Where(q => q.RealtyDefinition.ToLower().StartsWith(txtContractDefinition.Text.ToLower()));
+            }
 
             var debtList = debts.ToList();
 

@@ -92,8 +92,11 @@ namespace Emlak.UI.Upcoming
             {
                 upcomings = upcomings.Where(q => q.Kiracilar != null && q.Kiracilar.ToLower().Contains(txtPartyName.Text.ToLower()));
             }
+            if (txtContractDefinition.Text.Trim().Length > 0)
+            {
+                upcomings = upcomings.Where(q => q.RealtyDefinition.ToLower().StartsWith(txtContractDefinition.Text.ToLower()));
+            }
 
-            
             var result = upcomings.OrderBy(q => q.DueDate).ToList();
 
             dgUpcoming.DataSource = result;
@@ -152,6 +155,31 @@ namespace Emlak.UI.Upcoming
                 int num = db.SaveChanges();
                 if (num > 0)
                 {
+                    FrmUpcomingList frmUpcoming = (FrmUpcomingList)Application.OpenForms["FrmUpcomingList"];
+                    if (frmUpcoming != null)
+                    {
+                        frmUpcoming.LoadUpcomings();
+                    }
+                    FrmMonthlyReportList frmMonthlyReportList = (FrmMonthlyReportList)Application.OpenForms["FrmMonthlyReportList"];
+                    if (frmMonthlyReportList != null)
+                    {
+                        frmMonthlyReportList.LoadMonthlyReport();
+                    }
+                    FrmYearlyReportList frmYearlyReportList = (FrmYearlyReportList)Application.OpenForms["FrmYearlyReportList"];
+                    if (frmYearlyReportList != null)
+                    {
+                        frmYearlyReportList.LoadYearlyReport();
+                    }
+                    FrmDebtsToLandlord frmDebtsToLandlord = (FrmDebtsToLandlord)Application.OpenForms["FrmDebtsToLandlord"];
+                    if (frmDebtsToLandlord != null)
+                    {
+                        frmDebtsToLandlord.LoadDebts();
+                    }
+                    FrmMain frmMain = (FrmMain)Application.OpenForms["FrmMain"];
+                    if (frmMain != null)
+                    {
+                        frmMain.LoadUpcomings();
+                    }
                     MessageBox.Show(num + " adet ödeme tamamlandı.");
                 }
                 else

@@ -59,7 +59,10 @@ namespace Emlak.UI.Upcoming
             {
                 debts = debts.Where(q => q.Kiracilar != null && q.Kiracilar.ToLower().Contains(txtPartyName.Text.ToLower()));
             }
-
+            if (txtContractDefinition.Text.Trim().Length > 0)
+            {
+                debts = debts.Where(q => q.RealtyDefinition.ToLower().StartsWith(txtContractDefinition.Text.ToLower()));
+            }
 
             var debtList = debts.ToList();
 
