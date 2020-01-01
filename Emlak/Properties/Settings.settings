@@ -30,7 +30,7 @@
       <Value Profile="(Default)">Emlak.Report.ReportInvoice.rdlc</Value>
     </Setting>
     <Setting Name="UpdateURL" Type="System.String" Scope="User">
-      <Value Profile="(Default)">http://telgrafla.com/emlakupdate/app.xml</Value>
+      <Value Profile="(Default)">http://telgrafla.com/updates/emlak/app.xml</Value>
     </Setting>
   </Settings>
 </SettingsFile>
