@@ -68,7 +68,6 @@ namespace Emlak.UI
             this.fontTipiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arkaplanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sunucuAyarlarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.mnMain.SuspendLayout();
             this.SuspendLayout();
@@ -317,7 +316,6 @@ namespace Emlak.UI
             // ayarlarToolStripMenuItem
             // 
             this.ayarlarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sunucuAyarlarıToolStripMenuItem,
             this.raporAyarlarıToolStripMenuItem,
             this.veritabanınıYedekleToolStripMenuItem,
             this.şifreyiDeğiştirToolStripMenuItem,
@@ -393,13 +391,6 @@ namespace Emlak.UI
             this.çıkışToolStripMenuItem.Text = "Çıkış";
             this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
-            // sunucuAyarlarıToolStripMenuItem
-            // 
-            this.sunucuAyarlarıToolStripMenuItem.Name = "sunucuAyarlarıToolStripMenuItem";
-            this.sunucuAyarlarıToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.sunucuAyarlarıToolStripMenuItem.Text = "Sunucu Ayarları";
-            this.sunucuAyarlarıToolStripMenuItem.Click += new System.EventHandler(this.sunucuAyarlarıToolStripMenuItem_Click);
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -466,6 +457,5 @@ namespace Emlak.UI
         private System.Windows.Forms.ToolStripMenuItem arkaplanToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem fontTipiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sunucuAyarlarıToolStripMenuItem;
     }
 }
