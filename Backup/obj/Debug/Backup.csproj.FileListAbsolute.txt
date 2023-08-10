@@ -1,0 +1,11 @@
+C:\Users\mmt\Desktop\Emlak\Backup\bin\Debug\Backup.exe.config
+C:\Users\mmt\Desktop\Emlak\Backup\bin\Debug\Backup.exe
+C:\Users\mmt\Desktop\Emlak\Backup\bin\Debug\Backup.pdb
+C:\Users\mmt\Desktop\Emlak\Backup\obj\Debug\Backup.csproj.AssemblyReference.cache
+C:\Users\mmt\Desktop\Emlak\Backup\obj\Debug\Backup.csproj.SuggestedBindingRedirects.cache
+C:\Users\mmt\Desktop\Emlak\Backup\obj\Debug\Backup.FrmMain.resources
+C:\Users\mmt\Desktop\Emlak\Backup\obj\Debug\Backup.Properties.Resources.resources
+C:\Users\mmt\Desktop\Emlak\Backup\obj\Debug\Backup.csproj.GenerateResource.cache
+C:\Users\mmt\Desktop\Emlak\Backup\obj\Debug\Backup.csproj.CoreCompileInputs.cache
+C:\Users\mmt\Desktop\Emlak\Backup\obj\Debug\Backup.exe
+C:\Users\mmt\Desktop\Emlak\Backup\obj\Debug\Backup.pdb

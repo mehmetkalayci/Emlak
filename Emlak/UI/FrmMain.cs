@@ -213,5 +213,10 @@ namespace Emlak.UI
                 BackgroundImage = Image.FromFile(Properties.Settings.Default.Background);
             }
         }
+
+        private void sunucuAyarlarıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHelper.ShowDialog<FrmServerSettings>();
+        }
     }
 }

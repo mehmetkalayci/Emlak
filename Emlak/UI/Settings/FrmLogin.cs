@@ -52,5 +52,10 @@ namespace Emlak.UI.Settings
             this.IsLoggedin = false;
         }
 
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FrmServerSettings frmServerSettings = new FrmServerSettings();
+            frmServerSettings.ShowDialog();
+        }
     }
 }

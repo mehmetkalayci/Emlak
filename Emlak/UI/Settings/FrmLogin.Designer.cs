@@ -33,6 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -81,12 +82,24 @@
             this.txtUsername.TabIndex = 2;
             this.txtUsername.Text = global::Emlak.Properties.Settings.Default.Username;
             // 
+            // btnSettings
+            // 
+            this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSettings.Location = new System.Drawing.Point(62, 97);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(75, 23);
+            this.btnSettings.TabIndex = 1;
+            this.btnSettings.Text = "Ayarlar";
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
+            // 
             // FrmLogin
             // 
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(232, 133);
+            this.Controls.Add(this.btnSettings);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label3);
@@ -108,5 +121,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Button btnSettings;
     }
 }

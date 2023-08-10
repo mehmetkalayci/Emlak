@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Emlak</RootNamespace>
     <AssemblyName>Emlak</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -121,6 +121,7 @@
     <Reference Include="System.ComponentModel.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ComponentModel.Primitives.4.3.0\lib\net45\System.ComponentModel.Primitives.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
@@ -368,6 +369,12 @@
     <Compile Include="UI\Settings\FrmSelectBackground.Designer.cs">
       <DependentUpon>FrmSelectBackground.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Settings\FrmServerSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Settings\FrmServerSettings.Designer.cs">
+      <DependentUpon>FrmServerSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Upcoming\FrmDebtsToLandlord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -480,6 +487,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Settings\FrmSelectBackground.resx">
       <DependentUpon>FrmSelectBackground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Settings\FrmServerSettings.resx">
+      <DependentUpon>FrmServerSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Upcoming\FrmDebtsToLandlord.resx">
       <DependentUpon>FrmDebtsToLandlord.cs</DependentUpon>
